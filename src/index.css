@@ -1,0 +1,59 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e5e7eb; /* Gray-200 for screen preview background */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.document-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.a4-page {
+  width: 210mm;
+  height: 297mm;
+  background: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Margins are handled by padding inside the React component */
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 0; /* Let the .a4-page padding handle the margins */
+  }
+  body {
+    background-color: white;
+  }
+  .document-container {
+    padding: 0;
+    gap: 0;
+    display: block;
+  }
+  .a4-page {
+    box-shadow: none;
+    margin: 0;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+  .a4-page:last-child {
+    page-break-after: auto;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
