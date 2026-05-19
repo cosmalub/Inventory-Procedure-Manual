@@ -820,7 +820,7 @@ const WritingShowcase = () =>
         <div className="flex flex-col items-center flex-1 max-w-[160px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
-            src="/IMG_5001.jpg"
+            src="/IMG_5106.jpg"
             alt="Найдите позицию в прайсе"
             className="w-full h-full object-cover" />
           
@@ -833,7 +833,7 @@ const WritingShowcase = () =>
         <div className="flex flex-col items-center flex-1 max-w-[160px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
-            src="/IMG_5002.jpg"
+            src="/IMG_5107.jpg"
             alt="Свайп влево на позиции"
             className="w-full h-full object-cover" />
           
@@ -846,7 +846,7 @@ const WritingShowcase = () =>
         <div className="flex flex-col items-center flex-1 max-w-[160px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
-            src="/IMG_5003_2.jpg"
+            src="/IMG_5107-1.jpg"
             alt="Нажмите +1шт."
             className="w-full h-full object-cover" />
           
@@ -872,22 +872,47 @@ const WritingShowcase2 = () =>
         Если на витрине несколько штук одного товара — добавьте позицию и
         укажите нужное количество.
       </p>
-      <ScreenshotSteps
-      steps={[
-      {
-        step: 'Шаг 1',
-        label: 'Найдите позицию в прайсе'
-      },
-      {
-        step: 'Шаг 2',
-        label: 'Измените количество'
-      },
-      {
-        step: 'Шаг 3',
-        label: 'Количество обновлено'
-      }]
-      } />
-    
+      <div className="flex gap-5 justify-center">
+        {/* Шаг 1 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5110.jpg"
+            alt="Найдите позицию в прайсе"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Найдите позицию в прайсе
+          </span>
+        </div>
+        {/* Шаг 2 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5113.jpg"
+            alt="Введите количество"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Введите нужное количество
+          </span>
+        </div>
+        {/* Шаг 3 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5114.jpg"
+            alt="Нажмите Записать"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Нажмите «Записать»
+          </span>
+        </div>
+      </div>
     </div>
 
     {/* Обновить прайс */}
@@ -900,22 +925,47 @@ const WritingShowcase2 = () =>
         После добавления позиций они не сразу видны в списке — это нормально.
         Обновите прайс, чтобы проверить себя.
       </p>
-      <ScreenshotSteps
-      steps={[
-      {
-        step: 'Шаг 1',
-        label: 'Нажмите кнопку обновления'
-      },
-      {
-        step: 'Шаг 2',
-        label: 'Дождитесь загрузки списка'
-      },
-      {
-        step: 'Шаг 3',
-        label: 'Проверьте внесённые позиции'
-      }]
-      } />
-    
+      <div className="flex gap-5 justify-center">
+        {/* Шаг 1 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5127.jpg"
+            alt="Позиция добавлена"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Позиция добавлена, но ещё не отображается в списке
+          </span>
+        </div>
+        {/* Шаг 2 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5127-1.jpg"
+            alt="Нажмите Обновить"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Нажмите «Обновить»
+          </span>
+        </div>
+        {/* Шаг 3 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5128.jpg"
+            alt="Проверьте внесённые позиции"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Проверьте внесённые позиции
+          </span>
+        </div>
+      </div>
     </div>
   </Page>;
 
@@ -931,22 +981,47 @@ const WritingShowcase3 = () =>
       <p className="text-sm text-gray-600 mb-3">
         Если позиция добавлена случайно — найдите её в списке и удалите.
       </p>
-      <ScreenshotSteps
-      steps={[
-      {
-        step: 'Шаг 1',
-        label: 'Найдите позицию в списке'
-      },
-      {
-        step: 'Шаг 2',
-        label: 'Выберите позицию для удаления'
-      },
-      {
-        step: 'Шаг 3',
-        label: 'Подтвердите удаление'
-      }]
-      } />
-    
+      <div className="flex gap-5 justify-center">
+        {/* Шаг 1 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5152.jpg"
+            alt="Найдите позицию в списке"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Найдите позицию в списке и нажмите на неё
+          </span>
+        </div>
+        {/* Шаг 2 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5153.jpg"
+            alt="Установите количество 0"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Установите количество <strong>0</strong>
+          </span>
+        </div>
+        {/* Шаг 3 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_5154.jpg"
+            alt="Нажмите Записать 2 раза"
+            className="w-full h-full object-cover" />
+          
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Нажмите <strong>«Записать» 2 раза</strong>
+          </span>
+        </div>
+      </div>
     </div>
 
     {/* QR-код видео */}
@@ -1087,91 +1162,169 @@ const AllRemainders = () =>
       Нужно внести в ТСД весь товар, который есть на торговой точке.
     </p>
 
-    <div className="grid grid-cols-1 gap-4 mb-6">
+    <div className="grid grid-cols-1 gap-4">
       {/* Сканирование */}
       <div className="bg-white border border-gray-200 rounded-lg p-5">
-        <div className="flex items-center mb-4">
+        <div className="flex items-center mb-3">
           <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
           <h3 className="text-xl font-bold text-gray-900">Сканируем:</h3>
         </div>
-        <p className="text-base text-gray-700 leading-relaxed mb-4">
+        <p className="text-sm text-gray-700 leading-relaxed mb-4">
           Сканируем весь товар на торговой точке.
         </p>
-        <div className="flex justify-center">
-          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center w-52">
-            <QrCode className="w-12 h-12 text-gray-400 mb-2" />
-            <span className="text-sm font-bold text-gray-800 mb-1">
-              🎬 Видео-инструкция
+
+        {/* Шаг 1: Перейти в режим сканирования */}
+        <div className="mb-5 flex gap-4 items-start">
+          <div className="flex-shrink-0">
+            <div className="bg-gray-100 border-2 border-gray-200 rounded-xl overflow-hidden w-[120px] aspect-[9/16]">
+              <img
+              src="/IMG_5159.jpg"
+              alt="Перейти в режим сканирования"
+              className="w-full h-full object-cover" />
+            
+            </div>
+          </div>
+          <div className="flex-1 pt-1">
+            <div className="flex items-start mb-1">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-2">
+                1
+              </span>
+              <p className="text-base text-gray-800 pt-0.5 font-semibold">
+                Перейдите в режим сканирования
+              </p>
+            </div>
+            <p className="text-sm text-gray-600 ml-9">
+              Нажмите на иконку <strong>QR-кода</strong> в правом верхнем углу.
+            </p>
+          </div>
+        </div>
+
+        {/* Шаг 2: Выбор режима — ползунок */}
+        <div>
+          <div className="flex items-start mb-3">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-2">
+              2
             </span>
-            <span className="text-xs text-gray-500">Как сканировать товар</span>
+            <p className="text-base text-gray-800 pt-0.5 font-semibold">
+              Переключите ползунок в нужное положение
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {/* Зелёный — много */}
+            <div className="flex flex-col">
+              <div className="bg-gray-50 border-2 border-green-300 rounded-lg overflow-hidden w-full aspect-[4/3] mb-2 flex items-center justify-center">
+                <img
+                src="/IMG_5161.jpg"
+                alt="Зелёный — режим большого количества"
+                className="w-full h-full object-contain" />
+              
+              </div>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-2">
+                <div className="flex items-center mb-1">
+                  <span className="inline-block bg-green-500 w-3 h-3 rounded-full mr-2"></span>
+                  <span className="text-sm font-bold text-green-900">
+                    Зелёный — много за раз
+                  </span>
+                </div>
+                <p className="text-xs text-gray-700 leading-snug">
+                  Можно сразу указать <strong>нужное количество</strong>.
+                </p>
+              </div>
+            </div>
+            {/* Серый — по одной */}
+            <div className="flex flex-col">
+              <div className="bg-gray-50 border-2 border-gray-300 rounded-lg overflow-hidden w-full aspect-[4/3] mb-2 flex items-center justify-center">
+                <img
+                src="/IMG_5160.jpg"
+                alt="Серый — режим по одной"
+                className="w-full h-full object-contain" />
+              
+              </div>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-2">
+                <div className="flex items-center mb-1">
+                  <span className="inline-block bg-gray-400 w-3 h-3 rounded-full mr-2"></span>
+                  <span className="text-sm font-bold text-gray-900">
+                    Серый — по одной
+                  </span>
+                </div>
+                <p className="text-xs text-gray-700 leading-snug">
+                  Каждое сканирование добавляет <strong>+1 шт.</strong>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Вручную */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5">
-        <div className="flex items-center mb-4">
-          <FileText className="w-5 h-5 text-blue-700 mr-2" />
-          <h3 className="text-xl font-bold text-gray-900">
-            Вносим вручную то, что не сканируется:
-          </h3>
-        </div>
-        <ul className="space-y-3 text-base">
-          <li className="flex items-start flex-col">
-            <div className="flex items-start">
-              <span className="text-blue-700 mr-2 font-bold">•</span>
-              <span className="text-gray-800 font-semibold">
-                Расходный материал:
-              </span>
-            </div>
-            <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
-              <li>Кассовая лента — считаем поштучно</li>
-              <li>
-                Майка в рулоне и фасовка в рулоне — считаем поштучно на вес
-              </li>
-              <li>Стрейч-плёнка — коэффициент от полной (0.5, 0.25 и т.д.)</li>
-              <li>Стрічка клейка — так же, как стрейч</li>
-            </ul>
-          </li>
-          <li className="flex items-start flex-col">
-            <div className="flex items-start">
-              <span className="text-blue-700 mr-2 font-bold">•</span>
-              <span className="text-gray-800 font-semibold">Тара:</span>
-            </div>
-            <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
-              <li>Банановый ящик</li>
-              <li>Бочка</li>
-              <li>Яичный ящик</li>
-              <li>Яичный лоток</li>
-              <li>Пивные ящики</li>
-              <li>Кеги (если есть разливное пиво)</li>
-            </ul>
-          </li>
-          <li className="flex items-start">
-            <span className="text-blue-700 mr-2 font-bold">•</span>
-            <span className="text-gray-800">
-              <span className="font-semibold">Весовой товар</span> — если есть
-              (колбаса, рыба и т.д.)
-            </span>
-          </li>
-          <li className="flex items-start flex-col">
-            <div className="flex items-start">
-              <span className="text-blue-700 mr-2 font-bold">•</span>
-              <span className="text-gray-800 font-semibold">
-                Кофейник (если есть на точке):
-              </span>
-            </div>
-            <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
-              <li>Взвешиваем все ингредиенты</li>
-              <li>Считаем стаканы, крышки, воду</li>
-              <li>Вносим в сканер и дублируем на акт по кофейнику</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </div>
+  </Page>;
 
-    {/* QR-код видео */}
+// --- Page 10b: Внесение всех остатков — вручную ---
+const AllRemaindersManual = () =>
+<Page>
+    <h2 className="text-2xl font-bold text-gray-900 mb-5 border-b pb-3">
+      5. Внесение всех остатков{' '}
+      <span className="text-gray-500 font-medium">— вручную</span>
+    </h2>
+
+    {/* Вручную */}
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <FileText className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          Вносим вручную то, что не сканируется:
+        </h3>
+      </div>
+      <ul className="space-y-3 text-base">
+        <li className="flex items-start flex-col">
+          <div className="flex items-start">
+            <span className="text-blue-700 mr-2 font-bold">•</span>
+            <span className="text-gray-800 font-semibold">
+              Расходный материал:
+            </span>
+          </div>
+          <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
+            <li>Кассовая лента — считаем поштучно</li>
+            <li>Майка в рулоне и фасовка в рулоне — считаем поштучно на вес</li>
+            <li>Стрейч-плёнка — коэффициент от полной (0.5, 0.25 и т.д.)</li>
+            <li>Стрічка клейка — так же, как стрейч</li>
+          </ul>
+        </li>
+        <li className="flex items-start flex-col">
+          <div className="flex items-start">
+            <span className="text-blue-700 mr-2 font-bold">•</span>
+            <span className="text-gray-800 font-semibold">Тара:</span>
+          </div>
+          <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
+            <li>Банановый ящик</li>
+            <li>Бочка</li>
+            <li>Яичный ящик</li>
+            <li>Яичный лоток</li>
+            <li>Пивные ящики</li>
+            <li>Кеги (если есть разливное пиво)</li>
+          </ul>
+        </li>
+        <li className="flex items-start">
+          <span className="text-blue-700 mr-2 font-bold">•</span>
+          <span className="text-gray-800">
+            <span className="font-semibold">Весовой товар</span> — если есть
+            (колбаса, рыба и т.д.)
+          </span>
+        </li>
+        <li className="flex items-start flex-col">
+          <div className="flex items-start">
+            <span className="text-blue-700 mr-2 font-bold">•</span>
+            <span className="text-gray-800 font-semibold">
+              Кофейник (если есть на точке):
+            </span>
+          </div>
+          <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
+            <li>Взвешиваем все ингредиенты</li>
+            <li>Считаем стаканы, крышки, воду</li>
+            <li>Вносим в сканер и дублируем на акт по кофейнику</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </Page>;
 
 // --- Page 11: Синхронизация сканеров ---
@@ -1669,6 +1822,7 @@ export function App() {
         <WritingShowcase3 />
         <ShiftClosing />
         <AllRemainders />
+        <AllRemaindersManual />
         <SyncScanners />
         <SyncScanners2 />
         <Verification />
