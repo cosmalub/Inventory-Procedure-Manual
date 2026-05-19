@@ -250,7 +250,7 @@ const Step1Detail = () =>
             </span>
           </li>
           <li>
-            <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+            <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
               <img
               src="/IMG_4963.jpg"
               alt="Нажмите F8 — Документы"
@@ -281,7 +281,7 @@ const Step1DetailCont = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4964.jpg"
             alt="Доп. функции"
@@ -311,7 +311,7 @@ const Step1DetailCont2 = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4965.jpg"
             alt="Нажмите Инвентаризация"
@@ -344,7 +344,7 @@ const Step1DetailCont2b = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4966_2.jpg"
             alt="Введите пароль 4459 и нажмите Ввести"
@@ -374,7 +374,7 @@ const Step1DetailCont3 = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4967_2.jpg"
             alt="Выберите дату переучёта"
@@ -404,7 +404,7 @@ const Step1DetailCont3b = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4968.jpg"
             alt="Выберите склад вашей точки"
@@ -435,7 +435,7 @@ const Step1Detail2 = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4969.jpg"
             alt="Выгрузить для ТСД"
@@ -467,7 +467,7 @@ const Step1Detail2a = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4970.jpg"
             alt="Выгрузка выполнена — нажмите ОК"
@@ -499,7 +499,7 @@ const Step1Detail2b = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4971.jpg"
             alt="BT-код для загрузки в сканер"
@@ -529,7 +529,7 @@ const Step1Detail2c = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4973.jpg"
             alt="Нажмите Загрузить на сканере"
@@ -559,7 +559,7 @@ const Step1Detail2c2 = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4974_2.jpg"
             alt="Нажмите Выбрать"
@@ -592,7 +592,7 @@ const Step1Detail2c3 = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4979.jpg"
             alt="Введите BT-код в верхнюю строку"
@@ -625,7 +625,7 @@ const Step1Detail2c4 = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4981.jpg"
             alt="Скачивание завершено — нажмите Ок"
@@ -657,7 +657,7 @@ const Step1Detail2c5 = () =>
           </span>
         </li>
         <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px]">
+          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
             <img
             src="/IMG_4983.jpg"
             alt="Загрузка окончена — нажмите ОК"
