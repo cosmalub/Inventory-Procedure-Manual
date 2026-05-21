@@ -6,10 +6,9 @@ import {
   AlertTriangle,
   Monitor,
   Smartphone,
-  QrCode,
-  Video,
   ClipboardList } from
 'lucide-react';
+import { QRCodeSVG } from 'qrcode.react';
 // --- Wrapper Component for A4 Pages ---
 const Page = ({
   children,
@@ -723,15 +722,19 @@ const Step1Detail2c6 = () =>
     <div className="border-t border-gray-200 my-4"></div>
 
     <div className="flex justify-center mb-4">
-      <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-64">
-        <QrCode className="w-20 h-20 text-gray-400 mb-3" />
-        <span className="text-base font-bold text-gray-800 mb-1">
-          🎬 Видео-инструкция
-        </span>
-        <span className="text-sm text-gray-500">
-          Отсканируйте QR-код, чтобы посмотреть видео процесса создания точки на
-          ТСД
-        </span>
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/JRpDnTPmkgY?feature=share" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео
+            процесса создания точки на ТСД
+          </span>
+        </div>
       </div>
     </div>
 
@@ -740,8 +743,9 @@ const Step1Detail2c6 = () =>
       <div>
         <h4 className="font-bold text-amber-900 mb-0.5 text-sm">Важно</h4>
         <p className="text-amber-800 text-sm">
-          При создании точки на ТСД и на кассе{' '}
-          <strong className="font-bold">должен быть интернет</strong>.
+          Для создания точки включите{' '}
+          <strong className="font-bold">интернет</strong>{' '}
+          (выключите режим полёта). После создания сразу включите режим полёта обратно — это бережёт заряд сканера.
         </p>
       </div>
     </div>
@@ -801,7 +805,7 @@ const WritingShowcase = () =>
 
     <p className="text-lg text-gray-700 mb-6 leading-relaxed">
       Если витрину пишут на двух ТСД одновременно — один сотрудник начинает с
-      начала прайса, второй с конца. Двигаясь навстречу друг другу, вы
+      начала «кодника», второй с конца. Двигаясь навстречу друг другу, вы
       гарантированно охватите все позиции.
     </p>
 
@@ -812,7 +816,7 @@ const WritingShowcase = () =>
         Как добавить одну позицию
       </h3>
       <p className="text-sm text-gray-600 mb-3">
-        Идёте по прайсу в ТСД и добавляете каждую позицию, которая есть на
+        Идёте по «коднику» в ТСД и добавляете каждую позицию, которая есть на
         витрине. Одно нажатие — одна штука.
       </p>
       <div className="flex gap-5 justify-center">
@@ -821,12 +825,12 @@ const WritingShowcase = () =>
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5106.jpg"
-            alt="Найдите позицию в прайсе"
+            alt="Найдите позицию в «коднике»"
             className="w-full h-full object-cover" />
           
           </div>
           <span className="text-xs text-gray-500 text-center leading-snug">
-            Найдите позицию в прайсе
+            Найдите позицию в «коднике»
           </span>
         </div>
         {/* Шаг 2 — реальный скриншот */}
@@ -878,12 +882,12 @@ const WritingShowcase2 = () =>
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5110.jpg"
-            alt="Найдите позицию в прайсе"
+            alt="Найдите позицию в «коднике»"
             className="w-full h-full object-cover" />
           
           </div>
           <span className="text-xs text-gray-500 text-center leading-snug">
-            Найдите позицию в прайсе
+            Найдите позицию в «коднике» и нажмите на неё
           </span>
         </div>
         {/* Шаг 2 */}
@@ -915,15 +919,15 @@ const WritingShowcase2 = () =>
       </div>
     </div>
 
-    {/* Обновить прайс */}
+    {/* Обновить кодник */}
     <div className="mb-8">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
         <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
-        Как обновить прайс
+        Как обновить «кодник»
       </h3>
       <p className="text-sm text-gray-600 mb-3">
         После добавления позиций они не сразу видны в списке — это нормально.
-        Обновите прайс, чтобы проверить себя.
+        Обновите «кодник», чтобы проверить себя.
       </p>
       <div className="flex gap-5 justify-center">
         {/* Шаг 1 */}
@@ -936,7 +940,7 @@ const WritingShowcase2 = () =>
           
           </div>
           <span className="text-xs text-gray-500 text-center leading-snug">
-            Позиция добавлена, но ещё не отображается в списке
+            Сделайте свайп справа налево на любой позиции
           </span>
         </div>
         {/* Шаг 2 */}
@@ -962,11 +966,12 @@ const WritingShowcase2 = () =>
           
           </div>
           <span className="text-xs text-gray-500 text-center leading-snug">
-            Проверьте внесённые позиции
+            После обновления появятся все добавленные вами позиции
           </span>
         </div>
       </div>
     </div>
+
   </Page>;
 
 // --- Page 8: Написание витрины (удаление + видео) ---
@@ -1025,15 +1030,20 @@ const WritingShowcase3 = () =>
     </div>
 
     {/* QR-код видео */}
-    <div className="flex justify-center mt-auto">
-      <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QrCode className="w-14 h-14 text-gray-400 mb-2" />
-        <span className="text-base font-bold text-gray-800 mb-1">
-          🎬 Видео-инструкция
-        </span>
-        <span className="text-sm text-gray-500">
-          Отсканируйте QR-код, чтобы посмотреть видео процесса написания витрины
-        </span>
+    <div className="mt-auto border-t border-gray-200 pt-4">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/TjFd1rIwZp8" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео
+            процесса написания витрины
+          </span>
+        </div>
       </div>
     </div>
   </Page>;
@@ -1050,27 +1060,185 @@ const ShiftClosing = () =>
       пересчитать деньги и внести результат в ТСД.
     </p>
 
-    <div className="grid grid-cols-1 gap-4 mb-5">
-      {/* На компьютере */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5">
-        <div className="flex items-center mb-4">
-          <Monitor className="w-5 h-5 text-blue-700 mr-2" />
-          <h3 className="text-xl font-bold text-gray-900">На компьютере:</h3>
-        </div>
-        <ol className="space-y-4 text-lg">
-          <li className="flex">
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">На компьютере:</h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex">
             <span className="font-bold text-blue-700 w-6 shrink-0">1.</span>
             <span className="text-gray-800">
-              Снимаем <strong className="font-semibold">Х-отчёт</strong>
+              Снимаем <strong className="font-semibold">Х-отчёт</strong>: Нажмите <strong>F8</strong> (или просто <strong>«Документы»</strong>) → выберите <strong>«Х-Отчет»</strong>
             </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">2.</span>
-            <span className="text-gray-800">Закрываем смену</span>
-          </li>
-        </ol>
-      </div>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-1 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+              <img
+              src="/IMG_xr_1.jpg"
+              alt="Нажмите F8 — выбрать Х-Отчет"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
 
+// --- Page 9.5: Закрытие смены — Х-отчёт (продолжение) ---
+const ShiftClosing1b = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">На компьютере — продолжение:</h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">2.</span>
+            <span className="text-gray-800">
+              Выберите <strong className="font-semibold">«Нефискальный»</strong>
+            </span>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-1 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+              <img
+              src="/IMG_xr_2.jpg"
+              alt="Выберите Нефискальный"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 9.6: Закрытие смены — Х-отчёт (шаг 3) ---
+const ShiftClosing1c = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">На компьютере — продолжение:</h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">3.</span>
+            <span className="text-gray-800">
+              Нажмите <strong className="font-semibold">«Да»</strong>
+            </span>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-1 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+              <img
+              src="/IMG_xr_3.jpg"
+              alt="Нажмите Да"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 9b: Закрытие смены — продолжение ---
+const ShiftClosing2 = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">На компьютере — продолжение:</h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">4.</span>
+            <span className="text-gray-800">Закрываем смену</span>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+              <img
+              src="/IMG_xr_4.jpg"
+              alt="Закрытие смены (F11)"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+          <div className="ml-6 mt-2 bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm text-gray-700">
+            <p>→ Нажмите <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">F11</kbd> или кнопку <strong>«Закрытие смены»</strong> внизу экрана
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 9.65: Закрытие смены — подтверждение ---
+const ShiftClosing2b = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">На компьютере — продолжение:</h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">5.</span>
+            <span className="text-gray-800">
+              Нажмите <strong className="font-semibold">«Да»</strong> на вопрос «Вы уверены, что хотите закрыть смену?»
+            </span>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[280px] mx-auto">
+              <img
+              src="/IMG_xr_5.jpg"
+              alt="Вы уверены, что хотите закрыть смену? Да"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    {/* QR-код видео */}
+    <div className="border-t border-gray-200 pt-4 mb-5">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/SJgaxvKNVNg" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео
+            процесса закрытия смены
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div className="border-l-4 border-amber-500 bg-amber-50 p-4 rounded-r-lg flex items-start mt-auto">
+      <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
+      <div>
+        <h4 className="font-bold text-amber-900 mb-0.5">
+          Если на точке две кассы
+        </h4>
+        <p className="text-amber-800 text-base">
+          Сначала на второстепенной — Х-отчёт и закрытие смены. Затем то же
+          самое на главной.
+        </p>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 9.7: Закрытие смены — пересчёт денег ---
+const ShiftClosing3 = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
       {/* Пересчёт денег + ТСД */}
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -1079,29 +1247,205 @@ const ShiftClosing = () =>
             Пересчёт денег + ТСД:
           </h3>
         </div>
-        <ol className="space-y-4 text-lg">
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">3.</span>
-            <span className="text-gray-800">
-              Пересчитываем деньги по купюрам и сразу вносим сумму в ТСД
-            </span>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex">
+              <span className="font-bold text-blue-700 w-6 shrink-0">6.</span>
+              <span className="text-gray-800">
+                Сначала откройте вкладку <strong className="font-semibold">«Деньги»</strong> на ТСД
+              </span>
+            </div>
+            <div className="mt-3">
+              <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
+                <img
+                src="/IMG_xr_6.jpg"
+                alt="Вкладка Деньги"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+          <li className="flex flex-col">
+            <div className="flex">
+              <span className="font-bold text-blue-700 w-6 shrink-0">7.</span>
+              <span className="text-gray-800">
+                Пересчитываем деньги по купюрам и нажимаем на нужный номинал в ТСД
+              </span>
+            </div>
+            <div className="mt-3">
+              <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
+                <img
+                src="/IMG_xr_7.jpg"
+                alt="Выбор купюры"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
           </li>
         </ol>
       </div>
+    </div>
+  </Page>;
 
+// --- Page 9.75: Закрытие смены — ввод количества купюр ---
+const ShiftClosing3b = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          Пересчёт денег + ТСД (продолжение):
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">8.</span>
+            <span className="text-gray-800">
+              Напишите вместо «0» количество купюр, которое вы насчитали
+            </span>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
+              <img
+              src="/IMG_xr_8.jpg"
+              alt="Ввод количества купюр"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+        <li className="flex flex-col">
+          <div className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">9.</span>
+            <span className="text-gray-800">
+              Нажмите плюсик два раза, чтобы записать
+            </span>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
+              <img
+              src="/IMG_xr_9.jpg"
+              alt="Нажать плюс два раза"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 9.77: Закрытие смены — удаление количества купюр ---
+const ShiftClosing3c = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          Пересчёт денег + ТСД (продолжение):
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">10.</span>
+            <span className="text-gray-800">
+              Если вы неправильно посчитали, нажмите крестик, чтобы удалить количество купюр
+            </span>
+          </div>
+          <div className="mt-3">
+            <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
+              <img
+              src="/IMG_xr_10.jpg"
+              alt="Удалить количество купюр"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    {/* QR-код видео */}
+    <div className="mt-auto border-t border-gray-200 pt-4">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео,
+            как пересчитывать деньги и вносить в ТСД
+          </span>
+        </div>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 9.8: Закрытие смены — внесение/изъятие ---
+const ShiftClosing4 = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
       {/* На компьютере — внесение/изъятие */}
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
           <Monitor className="w-5 h-5 text-blue-700 mr-2" />
           <h3 className="text-xl font-bold text-gray-900">На компьютере:</h3>
         </div>
-        <ol className="space-y-4 text-lg">
+
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-5 rounded-r-lg">
+          <p className="text-blue-900 text-base leading-relaxed">
+            После того, как мы пересчитали деньги в кассе, нужно сравнить получившуюся сумму с суммой по Х-отчёту.<br/>
+            Если реальных денег в кассе <strong>больше</strong>, чем в отчёте — делаем <strong>внесение</strong>.<br/>
+            Если денег <strong>меньше</strong> — делаем <strong>изъятие</strong>.
+          </p>
+        </div>
+
+        <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">4.</span>
+              <span className="font-bold text-blue-700 w-6 shrink-0">11.</span>
               <span className="text-gray-800">
-                Делаем внесение или изъятие:
+                Нажмите <strong className="font-semibold">F8</strong> (или кнопку <strong>«Документы»</strong>)
               </span>
+            </div>
+            <div className="mt-3">
+              <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+                <img
+                src="/IMG_xr_11.jpg"
+                alt="Документы (F8)"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 9.85: Закрытие смены — внесение/изъятие (продолжение) ---
+const ShiftClosing4b = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На компьютере (продолжение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex">
+              <span className="font-bold text-blue-700 w-6 shrink-0">12.</span>
+              <span className="text-gray-800">
+                Выберите <strong>«Внесение денег»</strong> или <strong>«Изъятие денег»</strong>:
+              </span>
+            </div>
+            <div className="mt-3">
+              <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+                <img
+                src="/IMG_xr_12.jpg"
+                alt="Внесение или изъятие денег"
+                className="w-full h-auto object-contain" />
+              </div>
             </div>
             <div className="ml-6 mt-2 space-y-1.5">
               <div className="flex items-start">
@@ -1123,30 +1467,115 @@ const ShiftClosing = () =>
         </ol>
       </div>
     </div>
+  </Page>;
 
-    <div className="border-l-4 border-amber-500 bg-amber-50 p-4 rounded-r-lg flex items-start mb-5">
-      <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
-      <div>
-        <h4 className="font-bold text-amber-900 mb-0.5">
-          Если на точке две кассы
-        </h4>
-        <p className="text-amber-800 text-base">
-          Сначала на второстепенной — Х-отчёт и закрытие смены. Затем то же
-          самое на главной.
-        </p>
+// --- Page 9.87: Закрытие смены — не фискальный ---
+const ShiftClosing4c = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На компьютере (продолжение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex">
+              <span className="font-bold text-blue-700 w-6 shrink-0">13.</span>
+              <span className="text-gray-800">
+                Затем выберите <strong className="font-semibold">«Не фискальный»</strong>
+              </span>
+            </div>
+            <div className="mt-3">
+              <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+                <img
+                src="/IMG_xr_13.jpg"
+                alt="Не фискальный"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 9.88: Закрытие смены — ввод суммы ---
+const ShiftClosing4d = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На компьютере (продолжение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex">
+              <span className="font-bold text-blue-700 w-6 shrink-0">14.</span>
+              <span className="text-gray-800">
+                Введите нужную сумму внесения (или изъятия) и нажмите <strong>«ОК»</strong>
+              </span>
+            </div>
+            <div className="mt-3">
+              <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+                <img
+                src="/IMG_xr_14.jpg"
+                alt="Ввод суммы"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 9.89: Закрытие смены — прочее внесение ---
+const ShiftClosing4e = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На компьютере (продолжение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex">
+              <span className="font-bold text-blue-700 w-6 shrink-0">15.</span>
+              <span className="text-gray-800">
+                Выберите строку <strong className="font-semibold">«Прочее внесение денежных средств»</strong> (или изъятие)
+              </span>
+            </div>
+            <div className="mt-3">
+              <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
+                <img
+                src="/IMG_xr_15.jpg"
+                alt="Прочее внесение денежных средств"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
       </div>
     </div>
 
     {/* QR-код видео */}
-    <div className="flex justify-center mt-auto">
-      <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QrCode className="w-14 h-14 text-gray-400 mb-2" />
-        <span className="text-base font-bold text-gray-800 mb-1">
-          🎬 Видео-инструкция
-        </span>
-        <span className="text-sm text-gray-500">
-          Отсканируйте QR-код, чтобы посмотреть видео процесса закрытия смены
-        </span>
+    <div className="mt-auto border-t border-gray-200 pt-4">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео о том,
+            как выровнять фактическую сумму с документальной
+          </span>
+        </div>
       </div>
     </div>
   </Page>;
@@ -1456,7 +1885,7 @@ const SyncScanners2 = () =>
     {/* QR-код видео */}
     <div className="flex justify-center">
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QrCode className="w-14 h-14 text-gray-400 mb-2" />
+        <QRCodeSVG value="https://inv-manual.ru/video/06-sync-scanners" size={56} level="M" className="mb-2" />
         <span className="text-base font-bold text-gray-800 mb-1">
           🎬 Видео-инструкция
         </span>
@@ -1486,7 +1915,7 @@ const Verification = () =>
         Как проходит сверка
       </h3>
       <p className="text-base text-gray-700 mb-4 leading-relaxed">
-        Идёте по прайсу в ТСД и смотрите на позиции товара. Ошибки подсвечены
+        Идёте по «коднику» в ТСД и смотрите на позиции товара. Ошибки подсвечены
         цветами:
       </p>
       <ScreenshotSteps
@@ -1590,7 +2019,7 @@ const Verification3 = () =>
     {/* QR-код видео */}
     <div className="flex justify-center">
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QrCode className="w-14 h-14 text-gray-400 mb-2" />
+        <QRCodeSVG value="https://inv-manual.ru/video/07-verification" size={56} level="M" className="mb-2" />
         <span className="text-base font-bold text-gray-800 mb-1">
           🎬 Видео-инструкция
         </span>
@@ -1721,7 +2150,7 @@ const FillActs = () =>
       </p>
       <div className="flex justify-center">
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-          <QrCode className="w-14 h-14 text-gray-400 mb-2" />
+        <QRCodeSVG value="https://inv-manual.ru/video/08-inventory-act" size={56} level="M" className="mb-2" />
           <span className="text-base font-bold text-gray-800 mb-1">
             🎬 Видео-инструкция
           </span>
@@ -1745,7 +2174,7 @@ const FillActs = () =>
       </p>
       <div className="flex justify-center">
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-          <QrCode className="w-14 h-14 text-gray-400 mb-2" />
+        <QRCodeSVG value="https://inv-manual.ru/video/08-coffee-act" size={56} level="M" className="mb-2" />
           <span className="text-base font-bold text-gray-800 mb-1">
             🎬 Видео-инструкция
           </span>
@@ -1821,6 +2250,18 @@ export function App() {
         <WritingShowcase2 />
         <WritingShowcase3 />
         <ShiftClosing />
+        <ShiftClosing1b />
+        <ShiftClosing1c />
+        <ShiftClosing2 />
+        <ShiftClosing2b />
+        <ShiftClosing3 />
+        <ShiftClosing3b />
+        <ShiftClosing3c />
+        <ShiftClosing4 />
+        <ShiftClosing4b />
+        <ShiftClosing4c />
+        <ShiftClosing4d />
+        <ShiftClosing4e />
         <AllRemainders />
         <AllRemaindersManual />
         <SyncScanners />
