@@ -1247,6 +1247,13 @@ const ShiftClosing3 = () =>
             Пересчёт денег + ТСД:
           </h3>
         </div>
+
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-5 rounded-r-lg">
+          <p className="text-blue-900 text-base leading-relaxed">
+            Теперь необходимо пересчитать все наличные в кассе. <strong>Важно:</strong> деньги считаются покупюрно. В ТСД мы вносим не общую сумму, а именно <strong>количество купюр</strong> каждого номинала. ТСД сам рассчитает итог!
+          </p>
+        </div>
+
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex">
@@ -1366,7 +1373,7 @@ const ShiftClosing3c = () =>
     <div className="mt-auto border-t border-gray-200 pt-4">
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
         <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
-          <QRCodeSVG value="https://youtube.com/shorts/" size={130} level="M" />
+          <QRCodeSVG value="https://youtube.com/shorts/yLs_n8hrfOM" size={130} level="M" />
         </div>
         <div className="flex flex-col">
           <span className="text-base font-bold text-blue-900 mb-1">
@@ -1565,7 +1572,7 @@ const ShiftClosing4e = () =>
     <div className="mt-auto border-t border-gray-200 pt-4">
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
         <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
-          <QRCodeSVG value="https://youtube.com/shorts/" size={130} level="M" />
+          <QRCodeSVG value="https://youtube.com/shorts/cPKRZWYlgZ0" size={130} level="M" />
         </div>
         <div className="flex flex-col">
           <span className="text-base font-bold text-blue-900 mb-1">
