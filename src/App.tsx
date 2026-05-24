@@ -536,6 +536,38 @@ const Step1Detail2b = () =>
     </div>
   </Page>;
 
+// --- Page 6.58: Создание точки — интернет / режим полета ---
+const Step1Detail2cIntro = () =>
+<Page>
+    {/* Scanner Section */}
+    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">На сканере (ТСД):</h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              1
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Убедитесь, что на ТСД включен интернет (выключен режим полёта)
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+              <img
+              src="/IMG_5172.jpg"
+              alt="Убедитесь, что выключен режим полёта"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
 // --- Page 6.6: Создание точки — сканер + QR + важно ---
 const Step1Detail2c = () =>
 <Page>
@@ -549,7 +581,7 @@ const Step1Detail2c = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              1
+              2
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Загрузить»</strong> на
@@ -583,7 +615,7 @@ const Step1Detail2c2 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              2
+              3
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Выбрать»</strong>
@@ -616,7 +648,7 @@ const Step1Detail2c3 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              3
+              4
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Введите в верхнюю строку{' '}
@@ -652,7 +684,7 @@ const Step1Detail2c4 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              4
+              5
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Дождитесь надписи{' '}
@@ -688,7 +720,7 @@ const Step1Detail2c5 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              5
+              6
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               После загрузки появится надпись{' '}
@@ -723,7 +755,7 @@ const Step1Detail2c6 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              6
+              7
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите на <strong className="font-semibold">3 точки</strong> в
@@ -827,7 +859,7 @@ const WritingShowcase = () =>
       </p>
       <div className="flex gap-5 justify-center">
         {/* Шаг 1 — реальный скриншот */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5106.jpg"
@@ -840,7 +872,7 @@ const WritingShowcase = () =>
           </span>
         </div>
         {/* Шаг 2 — реальный скриншот */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5107.jpg"
@@ -853,7 +885,7 @@ const WritingShowcase = () =>
           </span>
         </div>
         {/* Шаг 3 — реальный скриншот */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5107-1.jpg"
@@ -884,7 +916,7 @@ const WritingShowcase2 = () =>
       </p>
       <div className="flex gap-5 justify-center">
         {/* Шаг 1 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5110.jpg"
@@ -897,7 +929,7 @@ const WritingShowcase2 = () =>
           </span>
         </div>
         {/* Шаг 2 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5113.jpg"
@@ -910,7 +942,7 @@ const WritingShowcase2 = () =>
           </span>
         </div>
         {/* Шаг 3 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5114.jpg"
@@ -937,7 +969,7 @@ const WritingShowcase2 = () =>
       </p>
       <div className="flex gap-5 justify-center">
         {/* Шаг 1 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5127.jpg"
@@ -950,7 +982,7 @@ const WritingShowcase2 = () =>
           </span>
         </div>
         {/* Шаг 2 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5127-1.jpg"
@@ -963,7 +995,7 @@ const WritingShowcase2 = () =>
           </span>
         </div>
         {/* Шаг 3 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5128.jpg"
@@ -994,7 +1026,7 @@ const WritingShowcase3 = () =>
       </p>
       <div className="flex gap-5 justify-center">
         {/* Шаг 1 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5152.jpg"
@@ -1007,7 +1039,7 @@ const WritingShowcase3 = () =>
           </span>
         </div>
         {/* Шаг 2 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5153.jpg"
@@ -1020,7 +1052,7 @@ const WritingShowcase3 = () =>
           </span>
         </div>
         {/* Шаг 3 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[180px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5154.jpg"
@@ -1062,7 +1094,7 @@ const ShiftClosing = () =>
     </h2>
 
     <p className="text-lg text-gray-700 mb-5 leading-relaxed">
-      Закрываем магазин. После этого нужно снять отчёт, закрыть смену,
+      После закрытия магазина нужно снять Х-отчёт, закрыть смену,
       пересчитать деньги и внести результат в ТСД.
     </p>
 
@@ -1073,11 +1105,13 @@ const ShiftClosing = () =>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">1.</span>
-            <span className="text-gray-800">
-              Снимаем <strong className="font-semibold">Х-отчёт</strong>: Нажмите <strong>F8</strong> (или просто <strong>«Документы»</strong>) → выберите <strong>«Х-Отчет»</strong>
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              1
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Снимаем <strong className="font-semibold">Х-отчёт</strong>: Нажмите <strong>F8</strong> (или просто <strong>«Документы»</strong>) → выберите <strong>«Х-Отчет»</strong>
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-1 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1102,11 +1136,13 @@ const ShiftClosing1b = () =>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">2.</span>
-            <span className="text-gray-800">
-              Выберите <strong className="font-semibold">«Нефискальный»</strong>
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              2
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Выберите <strong className="font-semibold">«Нефискальный»</strong>
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-1 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1131,11 +1167,13 @@ const ShiftClosing1c = () =>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">3.</span>
-            <span className="text-gray-800">
-              Нажмите <strong className="font-semibold">«Да»</strong>
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              3
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Да»</strong>
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-1 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1160,9 +1198,17 @@ const ShiftClosing2 = () =>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">4.</span>
-            <span className="text-gray-800">Закрываем смену</span>
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              4
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Закрываем смену: нажмите{' '}
+              <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">
+                F11
+              </kbd>{' '}
+              или кнопку <strong className="font-semibold">«Закрытие смены»</strong> внизу экрана
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1171,10 +1217,6 @@ const ShiftClosing2 = () =>
               alt="Закрытие смены (F11)"
               className="w-full h-auto object-contain" />
             </div>
-          </div>
-          <div className="ml-6 mt-2 bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm text-gray-700">
-            <p>→ Нажмите <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">F11</kbd> или кнопку <strong>«Закрытие смены»</strong> внизу экрана
-            </p>
           </div>
         </li>
       </ol>
@@ -1191,11 +1233,13 @@ const ShiftClosing2b = () =>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">5.</span>
-            <span className="text-gray-800">
-              Нажмите <strong className="font-semibold">«Да»</strong> на вопрос «Вы уверены, что хотите закрыть смену?»
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              5
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Да»</strong> на вопрос «Вы уверены, что хотите закрыть смену?»
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[280px] mx-auto">
@@ -1262,11 +1306,13 @@ const ShiftClosing3 = () =>
 
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
-            <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">6.</span>
-              <span className="text-gray-800">
-                Сначала откройте вкладку <strong className="font-semibold">«Деньги»</strong> на ТСД
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                1
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Сначала откройте вкладку <strong className="font-semibold">«Деньги»</strong> на ТСД
+              </div>
             </div>
             <div className="mt-3">
               <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
@@ -1278,11 +1324,13 @@ const ShiftClosing3 = () =>
             </div>
           </li>
           <li className="flex flex-col">
-            <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">7.</span>
-              <span className="text-gray-800">
-                Пересчитываем деньги по купюрам и нажимаем на нужный номинал в ТСД
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                2
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Пересчитываем деньги по купюрам и нажимаем на нужный номинал в ТСД
+              </div>
             </div>
             <div className="mt-3">
               <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
@@ -1310,11 +1358,13 @@ const ShiftClosing3b = () =>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">8.</span>
-            <span className="text-gray-800">
-              Напишите вместо «0» количество купюр, которое вы насчитали
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              3
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Напишите вместо «0» количество купюр, которое вы насчитали
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
@@ -1326,11 +1376,13 @@ const ShiftClosing3b = () =>
           </div>
         </li>
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">9.</span>
-            <span className="text-gray-800">
-              Нажмите плюсик два раза, чтобы записать
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              4
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите плюсик два раза, чтобы записать
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
@@ -1357,11 +1409,13 @@ const ShiftClosing3c = () =>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
-          <div className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">10.</span>
-            <span className="text-gray-800">
-              Если вы неправильно посчитали, нажмите крестик, чтобы удалить количество купюр
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              5
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Если вы неправильно посчитали, нажмите крестик, чтобы удалить количество купюр
+            </div>
           </div>
           <div className="mt-3">
             <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto">
@@ -1415,11 +1469,13 @@ const ShiftClosing4 = () =>
 
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
-            <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">11.</span>
-              <span className="text-gray-800">
-                Нажмите <strong className="font-semibold">F8</strong> (или кнопку <strong>«Документы»</strong>)
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                1
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите <strong className="font-semibold">F8</strong> (или кнопку <strong>«Документы»</strong>)
+              </div>
             </div>
             <div className="mt-3">
               <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1446,11 +1502,13 @@ const ShiftClosing4b = () =>
         </div>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
-            <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">12.</span>
-              <span className="text-gray-800">
-                Выберите <strong>«Внесение денег»</strong> или <strong>«Изъятие денег»</strong>:
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                2
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Выберите <strong>«Внесение денег»</strong> или <strong>«Изъятие денег»</strong>:
+              </div>
             </div>
             <div className="mt-3">
               <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1493,11 +1551,13 @@ const ShiftClosing4c = () =>
         </div>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
-            <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">13.</span>
-              <span className="text-gray-800">
-                Затем выберите <strong className="font-semibold">«Не фискальный»</strong>
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                3
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Затем выберите <strong className="font-semibold">«Не фискальный»</strong>
+              </div>
             </div>
             <div className="mt-3">
               <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1524,11 +1584,13 @@ const ShiftClosing4d = () =>
         </div>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
-            <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">14.</span>
-              <span className="text-gray-800">
-                Введите нужную сумму внесения (или изъятия) и нажмите <strong>«ОК»</strong>
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                4
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Введите нужную сумму внесения (или изъятия) и нажмите <strong>«ОК»</strong>
+              </div>
             </div>
             <div className="mt-3">
               <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1555,11 +1617,13 @@ const ShiftClosing4e = () =>
         </div>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
-            <div className="flex">
-              <span className="font-bold text-blue-700 w-6 shrink-0">15.</span>
-              <span className="text-gray-800">
-                Выберите строку <strong className="font-semibold">«Прочее внесение денежных средств»</strong> (или изъятие)
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                5
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Выберите строку <strong className="font-semibold">«Прочее внесение денежных средств»</strong> (или изъятие)
+              </div>
             </div>
             <div className="mt-3">
               <div className="mt-1 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
@@ -1913,10 +1977,12 @@ const SyncScanners = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">1.</span>
-              <span className="text-gray-800">
-                Сначала перейдите во вкладку <strong className="font-semibold">«Осн...» (Основное)</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                1
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Сначала перейдите во вкладку <strong className="font-semibold">«Осн...» (Основное)</strong>
+              </div>
             </div>
             <div className="mt-3">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -1944,11 +2010,13 @@ const SyncScanners1b = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">2.</span>
-              <span className="text-gray-800">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                2
+              </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
                 Нажмите <strong className="font-semibold">«Завершить сбор товара»</strong>{' '}
                 <span className="text-gray-500">(если кнопка не нажата)</span>
-              </span>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -1961,10 +2029,12 @@ const SyncScanners1b = () =>
           </li>
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">3.</span>
-              <span className="text-gray-800">
-                <strong className="font-semibold">Если интернет отключён:</strong> выдвиньте шторку экрана сверху вниз и <strong className="font-semibold">снимите режим полёта</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                3
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                <strong className="font-semibold">Если интернет отключён:</strong> выдвиньте шторку экрана сверху вниз и <strong className="font-semibold">снимите режим полёта</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -1992,10 +2062,12 @@ const SyncScanners1c = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">4.</span>
-              <span className="text-gray-800">
-                Нажмите на <strong className="font-semibold">три точки</strong> вверху справа
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                4
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите на <strong className="font-semibold">три точки</strong> вверху справа
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -2008,10 +2080,12 @@ const SyncScanners1c = () =>
           </li>
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">5.</span>
-              <span className="text-gray-800">
-                Нажмите <strong className="font-semibold">«Выгрузить»</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                5
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите <strong className="font-semibold">«Выгрузить»</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -2039,10 +2113,12 @@ const SyncScanners1d = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">6.</span>
-              <span className="text-gray-800">
-                Справа вверху нажмите кнопку <strong className="font-semibold">«Выбрать»</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                6
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Справа вверху нажмите кнопку <strong className="font-semibold">«Выбрать»</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -2055,10 +2131,12 @@ const SyncScanners1d = () =>
           </li>
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">7.</span>
-              <span className="text-gray-800">
-                После появления сообщения <strong className="font-semibold">«Выгрузка завершена»</strong> нажмите кнопку <strong className="font-semibold">«ОК»</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                7
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                После появления сообщения <strong className="font-semibold">«Выгрузка завершена»</strong> нажмите кнопку <strong className="font-semibold">«ОК»</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -2086,10 +2164,12 @@ const SyncScanners1e = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">8.</span>
-              <span className="text-gray-800">
-                Нажмите кнопку <strong className="font-semibold">«ОК»</strong> еще раз для подтверждения успешной выгрузки
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                8
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите кнопку <strong className="font-semibold">«ОК»</strong> еще раз для подтверждения успешной выгрузки
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -2119,7 +2199,7 @@ const SyncScanners2 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              9
+              1
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите клавишу{' '}
@@ -2155,7 +2235,7 @@ const SyncScanners2b = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              10
+              2
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">Доп. функции</strong>
@@ -2188,7 +2268,7 @@ const SyncScanners2c = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              11
+              3
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">Инвентаризация</strong>
@@ -2221,7 +2301,7 @@ const SyncScanners2d = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              12
+              4
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Введите пароль:{' '}
@@ -2257,7 +2337,7 @@ const SyncScanners2e = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              13
+              5
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Выберите сегодняшнюю дату переучёта
@@ -2290,7 +2370,7 @@ const SyncScanners2f = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              14
+              6
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               В другой вкладке выберите склад вашей точки
@@ -2323,7 +2403,7 @@ const SyncScanners2g = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              15
+              7
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите на <strong className="font-semibold">«Загрузить из ТСД»</strong>
@@ -2356,7 +2436,7 @@ const SyncScanners2g_ok = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              16
+              8
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               После загрузки появится надпись{' '}
@@ -2391,7 +2471,7 @@ const SyncScanners2g_report = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              17
+              9
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите на кнопку <strong className="font-semibold">«Отчёт»</strong> (Отчёт расхождений). Убедитесь, что данные со всех сканеров подгрузились. Например: сверху в расхождениях должна быть тара и другое, что считали на одном сканере, а снизу — сигареты, пиво и т.д., которые считали на другом сканере. Смысл в том, что в отчёте мы проверяем, выгрузились ли остатки со сканеров. После проверки закройте отчёт.
@@ -2431,7 +2511,7 @@ const SyncScanners2h = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              18
+              10
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Выгрузить для ТСД»</strong>
@@ -2464,7 +2544,7 @@ const SyncScanners2i = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              19
+              11
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Появится надпись{' '}
@@ -2499,7 +2579,7 @@ const SyncScanners2j = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              20
+              12
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Появился <strong className="font-semibold">BT-код</strong> — его
@@ -2531,11 +2611,11 @@ const SyncScanners3 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              21
+              1
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Загрузить»</strong> на
-              сканере и введите BT-код, который появился на шаге 20
+              сканере и введите BT-код, который появился на шаге 12
             </div>
           </div>
           <div className="mt-4">
@@ -2565,7 +2645,7 @@ const SyncScanners3b = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              22
+              2
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Выбрать»</strong>
@@ -2598,12 +2678,12 @@ const SyncScanners3c = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              23
+              3
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Введите в верхнюю строку{' '}
               <strong className="font-semibold">BT-код</strong>, который появился
-              на компьютере (шаг 20), и нажмите{' '}
+              на компьютере (шаг 12), и нажмите{' '}
               <strong className="font-semibold">«ОК»</strong>
             </div>
           </div>
@@ -2634,7 +2714,7 @@ const SyncScanners3d = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              24
+              4
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Дождитесь надписи{' '}
@@ -2670,7 +2750,7 @@ const SyncScanners3e = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              25
+              5
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               После загрузки появится надпись{' '}
@@ -2724,7 +2804,7 @@ const Verification = () =>
       и исправить.
     </p>
 
-    <div className="mb-6">
+    <div className="mb-6 space-y-4">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
         <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
         Как проходит сверка
@@ -2733,62 +2813,99 @@ const Verification = () =>
         Идёте по «коднику» в ТСД и смотрите на позиции товара. Возможные ошибки подсвечены
         цветами. Нужно пересчитать весь товар, который не сошёлся. Если есть ошибка — исправить, добавив или убрав количество товара, а если ошибки нет — сверять дальше:
       </p>
-      <div className="flex gap-4 justify-center">
-        {/* Не хватает */}
-        <div className="flex flex-col items-center flex-1 max-w-[130px]">
-          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
-            <img
-            src="/IMG_verif_1.jpg"
-            alt="Не хватает"
-            className="w-full h-full object-cover" />
-          </div>
-          <span className="text-xs text-gray-500 text-center leading-snug">
-            Не хватает
-          </span>
+
+      {/* Не хватает */}
+      <div className="bg-amber-50/50 border border-amber-200 rounded-xl p-4 flex gap-5 items-center">
+        <div className="rounded-lg overflow-hidden border border-amber-300 max-w-[180px] w-full shrink-0 shadow-sm">
+          <img
+          src="/IMG_verif_1.jpg"
+          alt="Не хватает"
+          className="w-full h-auto object-contain" />
         </div>
-        {/* Плюсует */}
-        <div className="flex flex-col items-center flex-1 max-w-[130px]">
-          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
-            <img
-            src="/IMG_verif_2.jpg"
-            alt="Плюсует"
-            className="w-full h-full object-cover" />
-          </div>
-          <span className="text-xs text-gray-500 text-center leading-snug">
-            Плюсует
+        <div className="flex-1">
+          <span className="inline-block bg-amber-100 text-amber-800 text-sm font-bold px-2.5 py-1 rounded-md mb-2">
+            Не хватает (Жёлтый)
           </span>
-        </div>
-        {/* Сошлось */}
-        <div className="flex flex-col items-center flex-1 max-w-[130px]">
-          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
-            <img
-            src="/IMG_verif_3.jpg"
-            alt="Сошлось"
-            className="w-full h-full object-cover" />
-          </div>
-          <span className="text-xs text-gray-500 text-center leading-snug">
-            Сошлось
-          </span>
-        </div>
-        {/* Не числится документально */}
-        <div className="flex flex-col items-center flex-1 max-w-[130px]">
-          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
-            <img
-            src="/IMG_verif_4.jpg"
-            alt="Не числится документально"
-            className="w-full h-full object-cover" />
-          </div>
-          <span className="text-xs text-gray-500 text-center leading-snug">
-            Не числится документально
-          </span>
+          <p className="text-base text-gray-700 leading-relaxed">
+            Показывает позиции, по которым в ТСД внесено меньше товара, чем должно быть по учету. Это повод пересчитать товар во всех зонах (полки, витрина, склад и т.д.). Если нашли ошибку во внесении — исправьте количество, если всё верно — оставьте как есть.
+          </p>
         </div>
       </div>
+
+    </div>
+  </Page>;
+
+// --- Page 13b: Сверка — пересчёт расхождений (продолжение) ---
+const Verification1b = () =>
+<Page>
+    <div className="mb-6 space-y-4">
+      <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
+        <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
+        Как проходит сверка (продолжение)
+      </h3>
+
+      {/* Плюсует */}
+      <div className="bg-blue-50/50 border border-blue-200 rounded-xl p-4 flex gap-5 items-center">
+        <div className="rounded-lg overflow-hidden border border-blue-300 max-w-[180px] w-full shrink-0 shadow-sm">
+          <img
+          src="/IMG_verif_2.jpg"
+          alt="Плюсует"
+          className="w-full h-auto object-contain" />
+        </div>
+        <div className="flex-1">
+          <span className="inline-block bg-blue-100 text-blue-800 text-sm font-bold px-2.5 py-1 rounded-md mb-2">
+            Плюсует (Синий)
+          </span>
+          <p className="text-base text-gray-700 leading-relaxed">
+            Показывает позиции, по которым в ТСД внесено больше товара, чем числится в системе. Это повод пересчитать товар во всех зонах (полки, витрина, склад и т.д.). Если нашли ошибку во внесении — исправьте количество, если всё верно — оставьте как есть.
+          </p>
+        </div>
+      </div>
+
+      {/* Сошлось */}
+      <div className="bg-emerald-50/50 border border-emerald-200 rounded-xl p-4 flex gap-5 items-center">
+        <div className="rounded-lg overflow-hidden border border-emerald-300 max-w-[180px] w-full shrink-0 shadow-sm">
+          <img
+          src="/IMG_verif_3.jpg"
+          alt="Сошлось"
+          className="w-full h-auto object-contain" />
+        </div>
+        <div className="flex-1">
+          <span className="inline-block bg-emerald-100 text-emerald-800 text-sm font-bold px-2.5 py-1 rounded-md mb-2">
+            Сошлось (Зелёный)
+          </span>
+          <p className="text-base text-gray-700 leading-relaxed">
+            Показывает позиции, по которым фактическое количество полностью совпало с учетным. С ними ничего делать не нужно.
+          </p>
+        </div>
+      </div>
+
     </div>
   </Page>;
 
 // --- Page 14: Сверка — исправление ошибок ---
 const Verification2 = () =>
 <Page pageNumber={14}>
+    {/* Не числится документально */}
+    <div className="mb-6">
+      <div className="bg-purple-50/50 border border-purple-200 rounded-xl p-4 flex gap-5 items-center">
+        <div className="rounded-lg overflow-hidden border border-purple-300 max-w-[180px] w-full shrink-0 shadow-sm">
+          <img
+          src="/IMG_verif_4.jpg"
+          alt="Не числится документально"
+          className="w-full h-auto object-contain" />
+        </div>
+        <div className="flex-1">
+          <span className="inline-block bg-purple-100 text-purple-800 text-sm font-bold px-2.5 py-1 rounded-md mb-2">
+            Не числится документально (Фиолетовый)
+          </span>
+          <p className="text-base text-gray-700 leading-relaxed">
+            Товар, который отсутствует в исходном документе инвентаризации, но был найден и посчитан вами. Проверьте правильность подсчета.
+          </p>
+        </div>
+      </div>
+    </div>
+
     {/* Как исправить если не хватает */}
     <div className="mb-8">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
@@ -2801,7 +2918,7 @@ const Verification2 = () =>
       </p>
       <div className="flex gap-4 justify-center mt-4">
         {/* Шаг 1 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[200px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_yellow_1.jpg"
@@ -2814,7 +2931,7 @@ const Verification2 = () =>
           </span>
         </div>
         {/* Шаг 2 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[200px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_yellow_2.jpg"
@@ -2827,7 +2944,7 @@ const Verification2 = () =>
           </span>
         </div>
         {/* Шаг 3 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[200px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_yellow_3.jpg"
@@ -2859,7 +2976,7 @@ const Verification2b = () =>
       </p>
       <div className="flex gap-4 justify-center mt-4">
         {/* Шаг 1 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[200px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_blue_1.jpg"
@@ -2872,7 +2989,7 @@ const Verification2b = () =>
           </span>
         </div>
         {/* Шаг 2 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[200px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_blue_2.jpg"
@@ -2885,7 +3002,7 @@ const Verification2b = () =>
           </span>
         </div>
         {/* Шаг 3 */}
-        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+        <div className="flex flex-col items-center flex-1 max-w-[200px]">
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_blue_3.jpg"
@@ -2898,31 +3015,31 @@ const Verification2b = () =>
           </span>
         </div>
       </div>
-
-      {/* Фиолетовые цвета — не числятся документально */}
-      <div className="mt-6 border-t pt-4">
-        <h3 className="text-xl font-bold text-blue-700 mb-2 flex items-center">
-          <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
-          Фиолетовый цвет (не числится документально)
-        </h3>
-        <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-          Просто убеждаемся, что количество посчитано верно по факту. Если нет — добавляем или убираем количество: нужно, чтобы оно совпало с тем, что фактически есть в наличии.
-        </p>
-        <div className="flex justify-center mt-4">
-          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full max-w-[160px] overflow-hidden aspect-[9/16]">
-            <img
-            src="/IMG_purple.jpg"
-            alt="Фиолетовый цвет"
-            className="w-full h-full object-cover" />
-          </div>
-        </div>
-      </div>
     </div>
   </Page>;
 
 // --- Page 16: Сверка — важно + видео ---
 const Verification3 = () =>
 <Page pageNumber={16}>
+    {/* Фиолетовые цвета — не числятся документально */}
+    <div className="mb-8">
+      <h3 className="text-xl font-bold text-blue-700 mb-2 flex items-center">
+        <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
+        Фиолетовый цвет (не числится документально)
+      </h3>
+      <p className="text-sm text-gray-700 mb-3 leading-relaxed">
+        Просто убеждаемся, что количество посчитано верно по факту. Если нет — добавляем или убираем количество: нужно, чтобы оно совпало с тем, что фактически есть в наличии.
+      </p>
+      <div className="flex justify-center mt-4">
+        <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full max-w-[200px] overflow-hidden aspect-[9/16]">
+          <img
+          src="/IMG_purple.jpg"
+          alt="Фиолетовый цвет"
+          className="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+
     <div className="border-l-4 border-amber-500 bg-amber-50 p-5 rounded-r-lg flex items-start mb-6">
       <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
       <div>
@@ -2984,10 +3101,12 @@ const DataExport = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">1.</span>
-              <span className="text-gray-800">
-                Сначала перейдите во вкладку <strong className="font-semibold">«Осн...» (Основное)</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                1
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Сначала перейдите во вкладку <strong className="font-semibold">«Осн...» (Основное)</strong>
+              </div>
             </div>
             <div className="mt-3">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3014,11 +3133,13 @@ const DataExport1b = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">2.</span>
-              <span className="text-gray-800">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                2
+              </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
                 Нажмите <strong className="font-semibold">«Завершить сбор товара»</strong>{' '}
                 <span className="text-gray-500">(если кнопка не нажата)</span>
-              </span>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3031,10 +3152,12 @@ const DataExport1b = () =>
           </li>
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">3.</span>
-              <span className="text-gray-800">
-                <strong className="font-semibold">Если интернет отключён:</strong> выдвиньте шторку экрана сверху вниз и <strong className="font-semibold">снимите режим полёта</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                3
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                <strong className="font-semibold">Если интернет отключён:</strong> выдвиньте шторку экрана сверху вниз и <strong className="font-semibold">снимите режим полёта</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3061,10 +3184,12 @@ const DataExport1c = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">4.</span>
-              <span className="text-gray-800">
-                Нажмите на <strong className="font-semibold">три точки</strong> вверху справа
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                4
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите на <strong className="font-semibold">три точки</strong> вверху справа
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3077,10 +3202,12 @@ const DataExport1c = () =>
           </li>
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">5.</span>
-              <span className="text-gray-800">
-                Нажмите <strong className="font-semibold">«Выгрузить»</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                5
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите <strong className="font-semibold">«Выгрузить»</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3107,10 +3234,12 @@ const DataExport1d = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">6.</span>
-              <span className="text-gray-800">
-                Справа вверху нажмите кнопку <strong className="font-semibold">«Выбрать»</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                6
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Справа вверху нажмите кнопку <strong className="font-semibold">«Выбрать»</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3123,10 +3252,12 @@ const DataExport1d = () =>
           </li>
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">7.</span>
-              <span className="text-gray-800">
-                После появления сообщения <strong className="font-semibold">«Выгрузка завершена»</strong> нажмите кнопку <strong className="font-semibold">«ОК»</strong>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                7
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                После появления сообщения <strong className="font-semibold">«Выгрузка завершена»</strong> нажмите кнопку <strong className="font-semibold">«ОК»</strong>
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3153,10 +3284,12 @@ const DataExport1e = () =>
         <ol className="space-y-5 text-lg">
           <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">8.</span>
-              <span className="text-gray-800">
-                Нажмите кнопку <strong className="font-semibold">«ОК»</strong> еще раз для подтверждения успешной выгрузки
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                8
               </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите кнопку <strong className="font-semibold">«ОК»</strong> еще раз для подтверждения успешной выгрузки
+              </div>
             </div>
             <div className="mt-3 mb-2">
               <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
@@ -3185,7 +3318,7 @@ const DataExport2 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              9
+              1
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите клавишу {' '}
@@ -3220,7 +3353,7 @@ const DataExport2b = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              10
+              2
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">Доп. функции</strong>
@@ -3252,7 +3385,7 @@ const DataExport2c = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              11
+              3
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">Инвентаризация</strong>
@@ -3284,7 +3417,7 @@ const DataExport2d = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              12
+              4
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Введите пароль: <strong className="font-semibold text-blue-700">4459</strong> — после ввода пароля нажмите на кнопку <strong className="font-semibold">«Ввести»</strong>
@@ -3316,7 +3449,7 @@ const DataExport2e = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              13
+              5
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Выберите сегодняшнюю дату переучёта
@@ -3348,7 +3481,7 @@ const DataExport2f = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              14
+              6
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               В другой вкладке выберите склад вашей точки
@@ -3380,7 +3513,7 @@ const DataExport2g = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              15
+              7
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите на <strong className="font-semibold">«Загрузить из ТСД»</strong>
@@ -3412,7 +3545,7 @@ const DataExport2h = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              16
+              8
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               После загрузки появится надпись{' '}
@@ -3446,7 +3579,7 @@ const DataExport3 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              17
+              9
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите на кнопку <strong className="font-semibold">«Отчёт»</strong> (Отчёт расхождений). Убедитесь, что все исправления, которые мы делали при сверке на ТСД (сканерах), применились и ушли из отчёта — там должны остаться только реальные расхождения. После проверки закройте отчёт.
@@ -3485,7 +3618,7 @@ const DataExport3b = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              18
+              10
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               После того как вы убедились, что сверка подгрузилась и отчёт верный, нажмите кнопку <strong className="font-semibold">«Закрытие инвентаризации»</strong> (или «Закончить инвентаризацию»).
@@ -3638,6 +3771,7 @@ export function App() {
         <Step1Detail2 />
         <Step1Detail2a />
         <Step1Detail2b />
+        <Step1Detail2cIntro />
         <Step1Detail2c />
         <Step1Detail2c2 />
         <Step1Detail2c3 />
@@ -3688,6 +3822,7 @@ export function App() {
         <SyncScanners3d />
         <SyncScanners3e />
         <Verification />
+        <Verification1b />
         <Verification2 />
         <Verification2b />
         <Verification3 />
