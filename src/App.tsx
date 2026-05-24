@@ -796,45 +796,6 @@ const Step1Detail2c6 = () =>
     </div>
   </Page>;
 
-// --- Screenshot placeholder ---
-const ScreenshotStep = ({
-  step,
-  label,
-  square = false
-
-
-
-
-}: {step: string;label: string;square?: boolean;}) =>
-<div
-  className={`flex flex-col items-center flex-1 ${square ? 'max-w-[180px]' : 'max-w-[160px]'}`}>
-  
-    <div
-    className={`bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center w-full px-3 text-center mb-2 ${square ? 'aspect-square' : 'aspect-[9/16]'}`}>
-    
-      <Smartphone className="w-8 h-8 text-gray-400 mb-1" />
-      <span className="text-xs text-gray-400">{step}</span>
-    </div>
-    <span className="text-xs text-gray-500 text-center leading-snug">
-      {label}
-    </span>
-  </div>;
-
-const ScreenshotSteps = ({
-  steps,
-  square = false
-
-
-
-
-
-
-}: {steps: {step: string;label: string;}[];square?: boolean;}) =>
-<div className="flex gap-5 justify-center">
-    {steps.map((s, i) =>
-  <ScreenshotStep key={i} step={s.step} label={s.label} square={square} />
-  )}
-  </div>;
 
 // --- Page 6: Написание витрины (intro) ---
 const WritingShowcase = () =>
@@ -2382,7 +2343,7 @@ const SyncScanners2g = () =>
     </Page>;
 
 // --- Page 12.7: Синхронизация — шаг 16 PC ---
-const SyncScanners2h = () =>
+const SyncScanners2g_ok = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
@@ -2396,6 +2357,81 @@ const SyncScanners2h = () =>
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
               16
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              После загрузки появится надпись{' '}
+              <strong className="font-semibold">«Загрузка выполнена»</strong> —
+              нажмите <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_sync_16.jpg"
+              alt="Загрузка выполнена — нажмите ОК"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.8: Синхронизация — шаг 17 PC ---
+const SyncScanners2g_report = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              17
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите на кнопку <strong className="font-semibold">«Отчёт»</strong> (Отчёт расхождений). Убедитесь, что данные со всех сканеров подгрузились. Например: сверху в расхождениях должна быть тара и другое, что считали на одном сканере, а снизу — сигареты, пиво и т.д., которые считали на другом сканере. Смысл в том, что в отчёте мы проверяем, выгрузились ли остатки со сканеров. После проверки закройте отчёт.
+            </div>
+          </div>
+          
+          <div className="flex gap-4 justify-center mt-4 mb-2">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[240px] shadow-sm">
+              <img
+              src="/IMG_report_1.jpg"
+              alt="Отчёт расхождений — проверка данных сканеров"
+              className="w-full h-auto object-contain" />
+            </div>
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[240px] shadow-sm">
+              <img
+              src="/IMG_report_2.jpg"
+              alt="Отчёт расхождений — сверка категорий"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.9: Синхронизация — шаг 18 PC ---
+const SyncScanners2h = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              18
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Выгрузить для ТСД»</strong>
@@ -2414,7 +2450,7 @@ const SyncScanners2h = () =>
     </div>
   </Page>;
 
-// --- Page 12.8: Синхронизация — шаг 17 PC ---
+// --- Page 12.10: Синхронизация — шаг 19 PC ---
 const SyncScanners2i = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -2428,7 +2464,7 @@ const SyncScanners2i = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              17
+              19
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Появится надпись{' '}
@@ -2449,7 +2485,7 @@ const SyncScanners2i = () =>
     </div>
   </Page>;
 
-// --- Page 12.9: Синхронизация — шаг 18 PC ---
+// --- Page 12.11: Синхронизация — шаг 20 PC ---
 const SyncScanners2j = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -2463,7 +2499,7 @@ const SyncScanners2j = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              18
+              20
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Появился <strong className="font-semibold">BT-код</strong> — его
@@ -2483,7 +2519,7 @@ const SyncScanners2j = () =>
     </div>
   </Page>;
 
-// --- Page 12b: Синхронизация сканеров (Загрузка) — шаг 19 ---
+// --- Page 12b: Синхронизация сканеров (Загрузка) — шаг 21 ---
 const SyncScanners3 = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -2495,11 +2531,11 @@ const SyncScanners3 = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              19
+              21
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Загрузить»</strong> на
-              сканере и введите BT-код, который появился на шаге 18
+              сканере и введите BT-код, который появился на шаге 20
             </div>
           </div>
           <div className="mt-4">
@@ -2515,7 +2551,7 @@ const SyncScanners3 = () =>
     </div>
   </Page>;
 
-// --- Page 12.10: Синхронизация сканеров (Загрузка) — шаг 20 ---
+// --- Page 12.12: Синхронизация сканеров (Загрузка) — шаг 22 ---
 const SyncScanners3b = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -2529,7 +2565,7 @@ const SyncScanners3b = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              20
+              22
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Нажмите <strong className="font-semibold">«Выбрать»</strong>
@@ -2548,7 +2584,7 @@ const SyncScanners3b = () =>
     </div>
   </Page>;
 
-// --- Page 12.11: Синхронизация сканеров (Загрузка) — шаг 21 ---
+// --- Page 12.13: Синхронизация сканеров (Загрузка) — шаг 23 ---
 const SyncScanners3c = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -2562,12 +2598,12 @@ const SyncScanners3c = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              21
+              23
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Введите в верхнюю строку{' '}
               <strong className="font-semibold">BT-код</strong>, который появился
-              на компьютере (шаг 18), и нажмите{' '}
+              на компьютере (шаг 20), и нажмите{' '}
               <strong className="font-semibold">«ОК»</strong>
             </div>
           </div>
@@ -2584,7 +2620,7 @@ const SyncScanners3c = () =>
     </div>
   </Page>;
 
-// --- Page 12.12: Синхронизация сканеров (Загрузка) — шаг 22 ---
+// --- Page 12.14: Синхронизация сканеров (Загрузка) — шаг 24 ---
 const SyncScanners3d = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -2598,7 +2634,7 @@ const SyncScanners3d = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              22
+              24
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               Дождитесь надписи{' '}
@@ -2620,7 +2656,7 @@ const SyncScanners3d = () =>
     </div>
   </Page>;
 
-// --- Page 12.13: Синхронизация сканеров (Загрузка) — шаг 23 ---
+// --- Page 12.15: Синхронизация сканеров (Загрузка) — шаг 25 ---
 const SyncScanners3e = () =>
 <Page>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
@@ -2634,7 +2670,7 @@ const SyncScanners3e = () =>
         <li className="flex flex-col">
           <div className="flex items-start">
             <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
-              23
+              25
             </span>
             <div className="text-base text-gray-700 leading-relaxed pt-0.5">
               После загрузки появится надпись{' '}
@@ -2694,29 +2730,59 @@ const Verification = () =>
         Как проходит сверка
       </h3>
       <p className="text-base text-gray-700 mb-4 leading-relaxed">
-        Идёте по «коднику» в ТСД и смотрите на позиции товара. Ошибки подсвечены
-        цветами:
+        Идёте по «коднику» в ТСД и смотрите на позиции товара. Возможные ошибки подсвечены
+        цветами. Нужно пересчитать весь товар, который не сошёлся. Если есть ошибка — исправить, добавив или убрав количество товара, а если ошибки нет — сверять дальше:
       </p>
-      <ScreenshotSteps
-      square
-      steps={[
-      {
-        step: 'Скриншот',
-        label: 'Не хватает'
-      },
-      {
-        step: 'Скриншот',
-        label: 'Плюсует'
-      },
-      {
-        step: 'Скриншот',
-        label: 'Сошлось'
-      }]
-      } />
-    
-      <p className="text-base text-gray-700 leading-relaxed">
-        Пересчитываем весь товар с расхождениями и исправляем ошибки.
-      </p>
+      <div className="flex gap-4 justify-center">
+        {/* Не хватает */}
+        <div className="flex flex-col items-center flex-1 max-w-[130px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_verif_1.jpg"
+            alt="Не хватает"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Не хватает
+          </span>
+        </div>
+        {/* Плюсует */}
+        <div className="flex flex-col items-center flex-1 max-w-[130px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_verif_2.jpg"
+            alt="Плюсует"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Плюсует
+          </span>
+        </div>
+        {/* Сошлось */}
+        <div className="flex flex-col items-center flex-1 max-w-[130px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_verif_3.jpg"
+            alt="Сошлось"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Сошлось
+          </span>
+        </div>
+        {/* Не числится документально */}
+        <div className="flex flex-col items-center flex-1 max-w-[130px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_verif_4.jpg"
+            alt="Не числится документально"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Не числится документально
+          </span>
+        </div>
+      </div>
     </div>
   </Page>;
 
@@ -2733,24 +2799,54 @@ const Verification2 = () =>
         Пересчитайте товар на полке. Если количество верное — оставьте как есть.
         Если ошиблись при внесении — исправьте количество.
       </p>
-      <ScreenshotSteps
-      steps={[
-      {
-        step: 'Шаг 1',
-        label: 'Найдите жёлтую позицию'
-      },
-      {
-        step: 'Шаг 2',
-        label: 'Пересчитайте товар'
-      },
-      {
-        step: 'Шаг 3',
-        label: 'Исправьте количество'
-      }]
-      } />
+      <div className="flex gap-4 justify-center mt-4">
+        {/* Шаг 1 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_yellow_1.jpg"
+            alt="Шаг 1: Найти жёлтую позицию"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs font-bold text-gray-800 mb-1">Шаг 1</span>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Найдите жёлтую позицию, которой не хватает
+          </span>
+        </div>
+        {/* Шаг 2 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_yellow_2.jpg"
+            alt="Шаг 2: Пересчитать и исправить"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs font-bold text-gray-800 mb-1">Шаг 2</span>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Пересчитайте товар. Если в ТСД 8 шт, а по факту 12 — нужно добавить 4. Нажмите на позицию, вместо «0» введите «4» и нажмите дважды «Записать»
+          </span>
+        </div>
+        {/* Шаг 3 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_yellow_3.jpg"
+            alt="Шаг 3: Убедиться в количестве"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs font-bold text-gray-800 mb-1">Шаг 3</span>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Убедитесь, что в ТСД в итоге появилось то количество, которое мы пересчитали (12 штук)
+          </span>
+        </div>
+      </div>
     
     </div>
+  </Page>;
 
+// --- Page 15: Сверка — исправление ошибок (синий) ---
+const Verification2b = () =>
+<Page pageNumber={15}>
     {/* Как исправить если плюсует */}
     <div className="mb-8">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
@@ -2761,28 +2857,72 @@ const Verification2 = () =>
         Пересчитайте товар на полке. Если количество верное — оставьте. Если
         внесли лишнее — уменьшите количество.
       </p>
-      <ScreenshotSteps
-      steps={[
-      {
-        step: 'Шаг 1',
-        label: 'Найдите синюю позицию'
-      },
-      {
-        step: 'Шаг 2',
-        label: 'Пересчитайте товар'
-      },
-      {
-        step: 'Шаг 3',
-        label: 'Уменьшите количество'
-      }]
-      } />
-    
+      <div className="flex gap-4 justify-center mt-4">
+        {/* Шаг 1 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_blue_1.jpg"
+            alt="Шаг 1: Найти синюю позицию"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs font-bold text-gray-800 mb-1">Шаг 1</span>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Найдите синюю позицию, которая плюсует
+          </span>
+        </div>
+        {/* Шаг 2 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_blue_2.jpg"
+            alt="Шаг 2: Пересчитать и исправить"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs font-bold text-gray-800 mb-1">Шаг 2</span>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Пересчитайте товар. Если в ТСД 8 шт, а по факту 7 — нужно убрать 1. Нажмите на позицию, вместо «0» введите «-1» и нажмите дважды «Записать»
+          </span>
+        </div>
+        {/* Шаг 3 */}
+        <div className="flex flex-col items-center flex-1 max-w-[160px]">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
+            <img
+            src="/IMG_blue_3.jpg"
+            alt="Шаг 3: Убедиться в количестве"
+            className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xs font-bold text-gray-800 mb-1">Шаг 3</span>
+          <span className="text-xs text-gray-500 text-center leading-snug">
+            Убедитесь, что в ТСД в итоге появилось то количество, которое мы пересчитали (7 штук)
+          </span>
+        </div>
+      </div>
+
+      {/* Фиолетовые цвета — не числятся документально */}
+      <div className="mt-6 border-t pt-4">
+        <h3 className="text-xl font-bold text-blue-700 mb-2 flex items-center">
+          <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
+          Фиолетовый цвет (не числится документально)
+        </h3>
+        <p className="text-sm text-gray-700 mb-3 leading-relaxed">
+          Просто убеждаемся, что количество посчитано верно по факту. Если нет — добавляем или убираем количество: нужно, чтобы оно совпало с тем, что фактически есть в наличии.
+        </p>
+        <div className="flex justify-center mt-4">
+          <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full max-w-[160px] overflow-hidden aspect-[9/16]">
+            <img
+            src="/IMG_purple.jpg"
+            alt="Фиолетовый цвет"
+            className="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
     </div>
   </Page>;
 
-// --- Page 15: Сверка — важно + видео ---
+// --- Page 16: Сверка — важно + видео ---
 const Verification3 = () =>
-<Page pageNumber={15}>
+<Page pageNumber={16}>
     <div className="border-l-4 border-amber-500 bg-amber-50 p-5 rounded-r-lg flex items-start mb-6">
       <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
       <div>
@@ -2796,125 +2936,604 @@ const Verification3 = () =>
     </div>
 
     {/* QR-код видео */}
-    <div className="flex justify-center">
-      <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QRCodeSVG value="https://inv-manual.ru/video/07-verification" size={56} level="M" className="mb-2" />
-        <span className="text-base font-bold text-gray-800 mb-1">
-          🎬 Видео-инструкция
-        </span>
-        <span className="text-sm text-gray-500">
-          Отсканируйте QR-код, чтобы посмотреть видео процесса сверки
-        </span>
+    <div className="flex justify-center mb-4">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/NFkekCMv3Oo" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео процесса сверки
+          </span>
+        </div>
       </div>
     </div>
   </Page>;
 
-// --- Page 16: Выгрузка данных и закрытие инвентаризации ---
+// --- Page 17: Выгрузка данных и закрытие инвентаризации ---
 const DataExport = () =>
-<Page pageNumber={16}>
+<Page pageNumber={17}>
     <h2 className="text-3xl font-bold text-gray-900 mb-5 border-b pb-4">
       8. Выгрузка данных, закрытие инвентаризации и заполнение актов
     </h2>
 
     <p className="text-lg text-gray-700 mb-5 leading-relaxed">
-      После сверки нужно выгрузить данные с ТСД, проверить отчёт и закрыть
-      инвентаризацию.
+      После сверки нужно выгрузить данные с ТСД и загрузить их на компьютер. Для этого выполните следующие шаги:
     </p>
 
+    <div className="border-l-4 border-amber-500 bg-amber-50 p-4 rounded-r-lg flex items-start mb-5">
+      <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
+      <div>
+        <h4 className="font-bold text-amber-900 mb-0.5">Внимание:</h4>
+        <p className="text-amber-800 text-base leading-relaxed">
+          Все шаги по выгрузке выполняются на ТСД, на котором проводилась сверка.
+        </p>
+      </div>
+    </div>
+
     <div className="grid grid-cols-1 gap-4 mb-5">
-      {/* На ТСД */}
+      {/* На ТСД — выгрузка */}
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
           <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
           <h3 className="text-xl font-bold text-gray-900">На ТСД:</h3>
         </div>
-        <ol className="space-y-4 text-lg">
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">1.</span>
-            <span className="text-gray-800">
-              На ТСД, где была сверка, нажмите{' '}
-              <strong className="font-semibold">«Выгрузить»</strong>
-            </span>
-          </li>
-        </ol>
-      </div>
-
-      {/* На компьютере */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5">
-        <div className="flex items-center mb-4">
-          <Monitor className="w-5 h-5 text-blue-700 mr-2" />
-          <h3 className="text-xl font-bold text-gray-900">На компьютере:</h3>
-        </div>
-        <ol className="space-y-4 text-lg">
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">2.</span>
-            <span className="text-gray-800">
-              Нажмите{' '}
-              <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">
-                F8
-              </kbd>
-            </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">3.</span>
-            <span className="text-gray-800">
-              Выберите{' '}
-              <strong className="font-semibold">
-                Доп. функции → Инвентаризация
-              </strong>
-            </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">4.</span>
-            <span className="text-gray-800">
-              Введите пароль:{' '}
-              <strong className="font-semibold text-blue-700">4459</strong>
-            </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">5.</span>
-            <span className="text-gray-800">
-              Выберите сегодняшнюю дату переучёта
-            </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">6.</span>
-            <span className="text-gray-800">
-              В другой вкладке выберите склад вашей точки
-            </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">7.</span>
-            <span className="text-gray-800">
-              Нажмите{' '}
-              <strong className="font-semibold">«Загрузить с ТСД»</strong>
-            </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">8.</span>
-            <span className="text-gray-800">
-              Зайдите в{' '}
-              <strong className="font-semibold">отчёт расхождений</strong> и
-              проверьте, что сверка подгрузилась
-            </span>
-          </li>
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">9.</span>
-            <span className="text-gray-800">
-              Нажмите{' '}
-              <strong className="font-semibold">
-                «Закрытие инвентаризации»
-              </strong>
-            </span>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">1.</span>
+              <span className="text-gray-800">
+                Сначала перейдите во вкладку <strong className="font-semibold">«Осн...» (Основное)</strong>
+              </span>
+            </div>
+            <div className="mt-3">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_1.jpg"
+                alt="Вкладка Основное"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
           </li>
         </ol>
       </div>
     </div>
   </Page>;
 
-// --- Page 17: Заполнение актов ---
+const DataExport1b = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На ТСД (продолжение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">2.</span>
+              <span className="text-gray-800">
+                Нажмите <strong className="font-semibold">«Завершить сбор товара»</strong>{' '}
+                <span className="text-gray-500">(если кнопка не нажата)</span>
+              </span>
+            </div>
+            <div className="mt-3 mb-2">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_2.jpg"
+                alt="Завершить сбор товара"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">3.</span>
+              <span className="text-gray-800">
+                <strong className="font-semibold">Если интернет отключён:</strong> выдвиньте шторку экрана сверху вниз и <strong className="font-semibold">снимите режим полёта</strong>
+              </span>
+            </div>
+            <div className="mt-3 mb-2">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_3.jpg"
+                alt="Снять режим полёта"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+const DataExport1c = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На ТСД (завершение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">4.</span>
+              <span className="text-gray-800">
+                Нажмите на <strong className="font-semibold">три точки</strong> вверху справа
+              </span>
+            </div>
+            <div className="mt-3 mb-2">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_4.jpg"
+                alt="Три точки меню"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">5.</span>
+              <span className="text-gray-800">
+                Нажмите <strong className="font-semibold">«Выгрузить»</strong>
+              </span>
+            </div>
+            <div className="mt-3 mb-2">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_5.jpg"
+                alt="Нажмите Выгрузить"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+const DataExport1d = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На ТСД (выбор и выгрузка):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">6.</span>
+              <span className="text-gray-800">
+                Справа вверху нажмите кнопку <strong className="font-semibold">«Выбрать»</strong>
+              </span>
+            </div>
+            <div className="mt-3 mb-2">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_6.jpg"
+                alt="Кнопка Выбрать"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">7.</span>
+              <span className="text-gray-800">
+                После появления сообщения <strong className="font-semibold">«Выгрузка завершена»</strong> нажмите кнопку <strong className="font-semibold">«ОК»</strong>
+              </span>
+            </div>
+            <div className="mt-3 mb-2">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_7.jpg"
+                alt="Выгрузка завершена"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+const DataExport1e = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">На ТСД (подтверждение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="font-bold text-blue-700 w-6 shrink-0 mt-0.5">8.</span>
+              <span className="text-gray-800">
+                Нажмите кнопку <strong className="font-semibold">«ОК»</strong> еще раз для подтверждения успешной выгрузки
+              </span>
+            </div>
+            <div className="mt-3 mb-2">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_sync_8.jpg"
+                alt="Повторное подтверждение"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+const DataExport2 = () =>
+<Page pageNumber={18}>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              9
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите клавишу {' '}
+              <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">
+                F8
+              </kbd>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4963.jpg"
+              alt="Нажмите F8 — Документы"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport2b = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              10
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">Доп. функции</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4964.jpg"
+              alt="Доп. функции"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport2c = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              11
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">Инвентаризация</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4965.jpg"
+              alt="Нажмите Инвентаризация"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport2d = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              12
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Введите пароль: <strong className="font-semibold text-blue-700">4459</strong> — после ввода пароля нажмите на кнопку <strong className="font-semibold">«Ввести»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4966_2.jpg"
+              alt="Введите пароль 4459 и нажмите Ввести"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport2e = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              13
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Выберите сегодняшнюю дату переучёта
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4967_2.jpg"
+              alt="Выберите дату переучёта"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport2f = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              14
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              В другой вкладке выберите склад вашей точки
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4968.jpg"
+              alt="Выберите склад вашей точки"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport2g = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              15
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите на <strong className="font-semibold">«Загрузить из ТСД»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_sync_15.jpg"
+              alt="Загрузить из ТСД"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport2h = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              16
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              После загрузки появится надпись{' '}
+              <strong className="font-semibold">«Загрузка выполнена»</strong> —
+              нажмите <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_sync_16.jpg"
+              alt="Загрузка выполнена — нажмите ОК"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport3 = () =>
+<Page pageNumber={19}>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — завершение:
+        </h3>
+      </div>
+      <ol className="space-y-6 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              17
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите на кнопку <strong className="font-semibold">«Отчёт»</strong> (Отчёт расхождений). Убедитесь, что все исправления, которые мы делали при сверке на ТСД (сканерах), применились и ушли из отчёта — там должны остаться только реальные расхождения. После проверки закройте отчёт.
+            </div>
+          </div>
+          
+          <div className="flex gap-4 justify-center mt-4 mb-2">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[240px] shadow-sm">
+              <img
+              src="/IMG_report_1.jpg"
+              alt="Отчёт расхождений — просмотр"
+              className="w-full h-auto object-contain" />
+            </div>
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[240px] shadow-sm">
+              <img
+              src="/IMG_report_2.jpg"
+              alt="Отчёт расхождений — проверка исправлений"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+const DataExport3b = () =>
+<Page pageNumber={20}>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — завершение (продолжение):
+        </h3>
+      </div>
+      <ol className="space-y-6 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              18
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              После того как вы убедились, что сверка подгрузилась и отчёт верный, нажмите кнопку <strong className="font-semibold">«Закрытие инвентаризации»</strong> (или «Закончить инвентаризацию»).
+            </div>
+          </div>
+          
+          <div className="flex gap-4 justify-center mt-4 mb-2">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[240px] shadow-sm">
+              <img
+              src="/IMG_close_1.jpg"
+              alt="Закрытие инвентаризации — подтверждение"
+              className="w-full h-auto object-contain" />
+            </div>
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[240px] shadow-sm">
+              <img
+              src="/IMG_close_2.jpg"
+              alt="Закрытие инвентаризации — завершение"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    {/* Разделитель */}
+    <div className="border-t border-gray-200 my-4 mt-auto"></div>
+
+    {/* QR-код видео */}
+    <div className="flex justify-center mb-4">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/GLFBhZEw3io" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео о том, как выгружать и заканчивать инвентаризацию
+          </span>
+        </div>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 21: Заполнение актов ---
 const FillActs = () =>
-<Page pageNumber={17}>
+<Page pageNumber={21}>
     <h3 className="text-2xl font-bold text-gray-900 mb-6">Заполнение актов</h3>
 
     {/* Акт инвентаризации */}
@@ -2927,47 +3546,47 @@ const FillActs = () =>
         Заполняем бланк акта инвентаризации: пишем название ТТ, дату, купюры
         дублируем с ТСД, указываем кто сдаёт и принимает смену, расписываемся.
       </p>
-      <div className="flex justify-center">
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QRCodeSVG value="https://inv-manual.ru/video/08-inventory-act" size={56} level="M" className="mb-2" />
-          <span className="text-base font-bold text-gray-800 mb-1">
-            🎬 Видео-инструкция
-          </span>
-          <span className="text-sm text-gray-500">
-            Как заполнять акт инвентаризации
-          </span>
+      <div className="mt-4">
+        <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[550px] mx-auto shadow-sm">
+          <img
+          src="/IMG_inventory_act.jpg"
+          alt="Заполненный акт инвентаризации"
+          className="w-full h-auto object-contain" />
         </div>
       </div>
     </div>
+  </Page>;
 
+// --- Page 22: Акт кофейника ---
+const FillActs2 = () =>
+<Page pageNumber={22}>
     {/* Акт кофейника */}
-    <div className="mb-8">
+    <div className="mb-6">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
         <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
         Акт кофейника (если есть на точке)
       </h3>
       <p className="text-base text-gray-700 mb-4 leading-relaxed">
         Если на точке есть кофемашина — дублируем все остатки по кофейнику в акт
-        с ТСД, снимаем показания счётчиков, пишем кто сдаёт и принимает смену,
+        и ТСД, снимаем показания счётчиков, пишем кто сдаёт и принимает смену,
         расписываемся.
       </p>
-      <div className="flex justify-center">
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QRCodeSVG value="https://inv-manual.ru/video/08-coffee-act" size={56} level="M" className="mb-2" />
-          <span className="text-base font-bold text-gray-800 mb-1">
-            🎬 Видео-инструкция
-          </span>
-          <span className="text-sm text-gray-500">
-            Как заполнять акт кофейника
-          </span>
+      
+      <div className="mt-4">
+        <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[550px] mx-auto shadow-sm">
+          <img
+          src="/IMG_coffee_act.jpg"
+          alt="Заполненный акт кофейника"
+          className="w-full h-auto object-contain" />
         </div>
       </div>
     </div>
+
   </Page>;
 
 // --- Последняя страница: Контакты ---
 const Contacts = () =>
-<Page pageNumber={18}>
+<Page pageNumber={23}>
     <div className="flex flex-col items-center justify-center flex-grow text-center">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">
         Контакты для помощи
@@ -3058,6 +3677,8 @@ export function App() {
         <SyncScanners2e />
         <SyncScanners2f />
         <SyncScanners2g />
+        <SyncScanners2g_ok />
+        <SyncScanners2g_report />
         <SyncScanners2h />
         <SyncScanners2i />
         <SyncScanners2j />
@@ -3068,9 +3689,25 @@ export function App() {
         <SyncScanners3e />
         <Verification />
         <Verification2 />
+        <Verification2b />
         <Verification3 />
         <DataExport />
+        <DataExport1b />
+        <DataExport1c />
+        <DataExport1d />
+        <DataExport1e />
+        <DataExport2 />
+        <DataExport2b />
+        <DataExport2c />
+        <DataExport2d />
+        <DataExport2e />
+        <DataExport2f />
+        <DataExport2g />
+        <DataExport2h />
+        <DataExport3 />
+        <DataExport3b />
         <FillActs />
+        <FillActs2 />
         <Contacts />
       </div>
     </div>);
