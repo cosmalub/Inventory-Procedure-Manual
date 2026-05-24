@@ -1043,12 +1043,12 @@ const WritingShowcase3 = () =>
           <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full overflow-hidden mb-2 aspect-[9/16]">
             <img
             src="/IMG_5153.jpg"
-            alt="Установите количество 0"
+            alt="Введите минус и количество для удаления"
             className="w-full h-full object-cover" />
           
           </div>
           <span className="text-xs text-gray-500 text-center leading-snug">
-            Установите количество <strong>0</strong>
+            Вместо нуля введите <strong>минус и количество</strong>, которое хотите убрать (например, <strong>−2</strong>)
           </span>
         </div>
         {/* Шаг 3 */}
@@ -1953,7 +1953,7 @@ const SyncScanners = () =>
 
     <p className="text-lg text-gray-700 mb-5 leading-relaxed">
       Перед сверкой нужно синхронизировать данные всех ТСД — передать данные с
-      одного в другого и наоборот, а также подтянуть продажи, которые были во
+      одного в другой, а также подтянуть продажи, которые были во
       время написания витрины.
     </p>
 
