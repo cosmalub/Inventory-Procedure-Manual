@@ -238,23 +238,26 @@ const Step1Detail = () =>
             На компьютере (кассе):
           </h3>
         </div>
-        <ol className="space-y-4 text-lg">
-          <li className="flex">
-            <span className="font-bold text-blue-700 w-6 shrink-0">1.</span>
-            <span className="text-gray-800">
-              Нажмите клавишу{' '}
-              <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">
-                F8
-              </kbd>
-            </span>
-          </li>
-          <li>
-            <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-              <img
-              src="/IMG_4963.jpg"
-              alt="Нажмите F8 — Документы"
-              className="w-full h-auto object-contain" />
-            
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                1
+              </span>
+              <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+                Нажмите клавишу{' '}
+                <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">
+                  F8
+                </kbd>
+              </div>
+            </div>
+            <div className="mt-4">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+                <img
+                src="/IMG_4963.jpg"
+                alt="Нажмите F8 — Документы"
+                className="w-full h-auto object-contain" />
+              </div>
             </div>
           </li>
         </ol>
@@ -272,20 +275,23 @@ const Step1DetailCont = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">2.</span>
-          <span className="text-gray-800">
-            Нажмите <strong className="font-semibold">Доп. функции</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4964.jpg"
-            alt="Доп. функции"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              2
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">Доп. функции</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4964.jpg"
+              alt="Доп. функции"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -302,20 +308,23 @@ const Step1DetailCont2 = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">3.</span>
-          <span className="text-gray-800">
-            Нажмите <strong className="font-semibold">Инвентаризация</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4965.jpg"
-            alt="Нажмите Инвентаризация"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              3
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">Инвентаризация</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4965.jpg"
+              alt="Нажмите Инвентаризация"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -332,23 +341,26 @@ const Step1DetailCont2b = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">4.</span>
-          <span className="text-gray-800">
-            Введите пароль:{' '}
-            <strong className="font-semibold text-blue-700">4459</strong> —
-            после ввода пароля нажмите на кнопку{' '}
-            <strong className="font-semibold">«Ввести»</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4966_2.jpg"
-            alt="Введите пароль 4459 и нажмите Ввести"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              4
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Введите пароль:{' '}
+              <strong className="font-semibold text-blue-700">4459</strong> —
+              после ввода пароля нажмите на кнопку{' '}
+              <strong className="font-semibold">«Ввести»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4966_2.jpg"
+              alt="Введите пароль 4459 и нажмите Ввести"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -365,20 +377,23 @@ const Step1DetailCont3 = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">5.</span>
-          <span className="text-gray-800">
-            Выберите сегодняшнюю дату переучёта
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4967_2.jpg"
-            alt="Выберите дату переучёта"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              5
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Выберите сегодняшнюю дату переучёта
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4967_2.jpg"
+              alt="Выберите дату переучёта"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -395,20 +410,23 @@ const Step1DetailCont3b = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">6.</span>
-          <span className="text-gray-800">
-            В другой вкладке выберите склад вашей точки
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4968.jpg"
-            alt="Выберите склад вашей точки"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              6
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              В другой вкладке выберите склад вашей точки
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4968.jpg"
+              alt="Выберите склад вашей точки"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -425,21 +443,23 @@ const Step1Detail2 = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">7.</span>
-          <span className="text-gray-800">
-            Нажмите{' '}
-            <strong className="font-semibold">«Выгрузить для ТСД»</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4969.jpg"
-            alt="Выгрузить для ТСД"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              7
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Выгрузить для ТСД»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4969.jpg"
+              alt="Выгрузить для ТСД"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -456,22 +476,25 @@ const Step1Detail2a = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">8.</span>
-          <span className="text-gray-800">
-            Появится надпись{' '}
-            <strong className="font-semibold">«Выгрузка выполнена»</strong> —
-            нажмите <strong className="font-semibold">«ОК»</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4970.jpg"
-            alt="Выгрузка выполнена — нажмите ОК"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              8
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Появится надпись{' '}
+              <strong className="font-semibold">«Выгрузка выполнена»</strong> —
+              нажмите <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4970.jpg"
+              alt="Выгрузка выполнена — нажмите ОК"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -489,21 +512,24 @@ const Step1Detail2b = () =>
           На компьютере (кассе) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">9.</span>
-          <span className="text-gray-800">
-            Появился <strong className="font-semibold">BT-код</strong> — его
-            нужно будет загрузить в сканер
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4971.jpg"
-            alt="BT-код для загрузки в сканер"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              9
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Появился <strong className="font-semibold">BT-код</strong> — его
+              нужно будет загрузить в сканер
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4971.jpg"
+              alt="BT-код для загрузки в сканер"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -519,21 +545,24 @@ const Step1Detail2c = () =>
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
         <h3 className="text-xl font-bold text-gray-900">На сканере (ТСД):</h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">1.</span>
-          <span className="text-gray-800">
-            Нажмите <strong className="font-semibold">«Загрузить»</strong> на
-            сканере и введите BT-код, который появился на шаге 9
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4973.jpg"
-            alt="Нажмите Загрузить на сканере"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              1
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Загрузить»</strong> на
+              сканере и введите BT-код, который появился на шаге 9
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4973.jpg"
+              alt="Нажмите Загрузить на сканере"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -550,20 +579,23 @@ const Step1Detail2c2 = () =>
           На сканере (ТСД) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">2.</span>
-          <span className="text-gray-800">
-            Нажмите <strong className="font-semibold">«Выбрать»</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4974_2.jpg"
-            alt="Нажмите Выбрать"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              2
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Выбрать»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4974_2.jpg"
+              alt="Нажмите Выбрать"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -580,23 +612,26 @@ const Step1Detail2c3 = () =>
           На сканере (ТСД) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">3.</span>
-          <span className="text-gray-800">
-            Введите в верхнюю строку{' '}
-            <strong className="font-semibold">BT-код</strong>, который появился
-            на компьютере (шаг 9), и нажмите{' '}
-            <strong className="font-semibold">«ОК»</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4979.jpg"
-            alt="Введите BT-код в верхнюю строку"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              3
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Введите в верхнюю строку{' '}
+              <strong className="font-semibold">BT-код</strong>, который появился
+              на компьютере (шаг 9), и нажмите{' '}
+              <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4979.jpg"
+              alt="Введите BT-код в верхнюю строку"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -613,23 +648,26 @@ const Step1Detail2c4 = () =>
           На сканере (ТСД) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">4.</span>
-          <span className="text-gray-800">
-            Дождитесь надписи{' '}
-            <strong className="font-semibold">«Скачивание завершено»</strong> —
-            нажмите <strong className="font-semibold">«Ок»</strong> и дождитесь
-            полной загрузки
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4981.jpg"
-            alt="Скачивание завершено — нажмите Ок"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              4
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Дождитесь надписи{' '}
+              <strong className="font-semibold">«Скачивание завершено»</strong> —
+              нажмите <strong className="font-semibold">«Ок»</strong> и дождитесь
+              полной загрузки
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4981.jpg"
+              alt="Скачивание завершено — нажмите Ок"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -646,22 +684,25 @@ const Step1Detail2c5 = () =>
           На сканере (ТСД) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">5.</span>
-          <span className="text-gray-800">
-            После загрузки появится надпись{' '}
-            <strong className="font-semibold">«Загрузка окончена»</strong> —
-            нажмите <strong className="font-semibold">«ОК»</strong>
-          </span>
-        </li>
-        <li>
-          <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto">
-            <img
-            src="/IMG_4983.jpg"
-            alt="Загрузка окончена — нажмите ОК"
-            className="w-full h-auto object-contain" />
-          
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              5
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              После загрузки появится надпись{' '}
+              <strong className="font-semibold">«Загрузка окончена»</strong> —
+              нажмите <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4983.jpg"
+              alt="Загрузка окончена — нажмите ОК"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
       </ol>
@@ -678,14 +719,18 @@ const Step1Detail2c6 = () =>
           На сканере (ТСД) — продолжение:
         </h3>
       </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">6.</span>
-          <span className="text-gray-800">
-            Нажмите на <strong className="font-semibold">3 точки</strong> в
-            правом верхнем углу, затем нажмите{' '}
-            <strong className="font-semibold">«Обновить»</strong>
-          </span>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              6
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите на <strong className="font-semibold">3 точки</strong> в
+              правом верхнем углу, затем нажмите{' '}
+              <strong className="font-semibold">«Обновить»</strong>
+            </div>
+          </div>
         </li>
       </ol>
       <div className="flex gap-4 justify-center mt-4">
@@ -1732,56 +1777,126 @@ const AllRemainders3 = () =>
             Как вносить товары вручную (те, что не сканируются):
           </h3>
         </div>
-        <ul className="space-y-3 text-base">
-          <li className="flex items-start flex-col">
+        <p className="text-lg text-gray-700 leading-relaxed mb-5">
+          Вручную вносятся товары, которые не сканируются или если отсканировать их не получается (из-за проблем со штрихкодом и так далее), а также весовой товар, тара, расходные материалы и другие подобные позиции.
+        </p>
+
+        <ol className="space-y-5 text-lg border-t pt-5">
+          <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="text-blue-700 mr-2 font-bold">•</span>
-              <span className="text-gray-800 font-semibold">
-                Расходный материал:
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                1
               </span>
+              <div>
+                <p className="text-gray-800 font-semibold mb-1">
+                  Перейдите в начало списка товаров
+                </p>
+                <p className="text-base text-gray-600 leading-snug">
+                  Перейдите во вкладку <strong className="font-semibold">«Товары» («Тов»)</strong> и нажмите кнопку <strong className="font-semibold">«Начало»</strong> (в левом нижнем углу), чтобы вернуться к списку товаров, где заполнялась витрина.
+                </p>
+              </div>
             </div>
-            <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
-              <li>Кассовая лента — считаем поштучно</li>
-              <li>Майка в рулоне и фасовка в рулоне — считаем поштучно на вес</li>
-              <li>Стрейч-плёнка — коэффициент от полной (0.5, 0.25 и т.д.)</li>
-              <li>Стрічка клейка — так же, как стрейч</li>
-            </ul>
+            <div className="mt-4">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_manual_1.jpg"
+                alt="Кнопка Начало во вкладке Товары"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
           </li>
-          <li className="flex items-start flex-col">
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 10c: Внесение всех остатков — вручную (поиск) ---
+const AllRemainders3b = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">Внесение вручную (продолжение):</h3>
+        </div>
+        <ol className="space-y-5 text-lg">
+          <li className="flex flex-col">
             <div className="flex items-start">
-              <span className="text-blue-700 mr-2 font-bold">•</span>
-              <span className="text-gray-800 font-semibold">Тара:</span>
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                2
+              </span>
+              <div>
+                <p className="text-gray-800 font-semibold mb-1">
+                  Вызовите строку поиска
+                </p>
+                <p className="text-base text-gray-600 leading-snug">
+                  Когда вы находитесь в начале списка («кодника»), слегка потяните экран пальцем сверху вниз (сделайте свайп вниз), пока в верхней части не появится строка поиска.
+                </p>
+              </div>
             </div>
-            <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
-              <li>Банановый ящик</li>
-              <li>Бочка</li>
-              <li>Яичный ящик</li>
-              <li>Яичный лоток</li>
-              <li>Пивные ящики</li>
-              <li>Кеги (если есть разливное пиво)</li>
-            </ul>
+            <div className="mt-4">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_manual_2.jpg"
+                alt="Вызов строки поиска свайпом вниз"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
           </li>
-          <li className="flex items-start">
-            <span className="text-blue-700 mr-2 font-bold">•</span>
+          <li className="flex flex-col">
+            <div className="flex items-start">
+              <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                3
+              </span>
+              <div>
+                <p className="text-gray-800 font-semibold mb-1">
+                  Введите часть названия или поставщика
+                </p>
+                <p className="text-base text-gray-600 leading-snug">
+                  Введите в строку поиска любую часть названия товара (начало, середину или конец слова) либо имя поставщика (например, «смк»). Пишите буквы в точности так, как товар записан в системе.
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+                <img
+                src="/IMG_manual_3.jpg"
+                alt="Поиск товара по названию"
+                className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </Page>;
+
+// --- Page 10d: Внесение всех остатков — вручную (ввод количества) ---
+const AllRemainders3c = () =>
+<Page>
+    <div className="grid grid-cols-1 gap-4 mb-5">
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <div className="flex items-center mb-4">
+          <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">Внесение вручную (продолжение):</h3>
+        </div>
+        <ol className="space-y-4 text-lg">
+          <li className="flex">
+            <span className="font-bold text-blue-700 w-6 shrink-0">4.</span>
             <span className="text-gray-800">
-              <span className="font-semibold">Весовой товар</span> — если есть
-              (колбаса, рыба и т.д.)
+              <strong className="font-semibold">Указать количество/вес и сохранить.</strong>{' '}
+              Нажмите на нужную позицию в списке. Вместо «0» введите необходимое количество (или вес товара, если он весовой) и нажмите кнопку <strong className="font-semibold text-blue-700">«Записать» два раза</strong>.
             </span>
           </li>
-          <li className="flex items-start flex-col">
-            <div className="flex items-start">
-              <span className="text-blue-700 mr-2 font-bold">•</span>
-              <span className="text-gray-800 font-semibold">
-                Кофейник (если есть на точке):
-              </span>
+          <li>
+            <div className="mt-2 mb-3 rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+              <img
+              src="/IMG_manual_4.jpg"
+              alt="Ввод количества или веса товара"
+              className="w-full h-auto object-contain" />
             </div>
-            <ul className="ml-6 mt-1.5 space-y-1.5 text-sm text-gray-700">
-              <li>Взвешиваем все ингредиенты</li>
-              <li>Считаем стаканы, крышки, воду</li>
-              <li>Вносим в сканер и дублируем на акт по кофейнику</li>
-            </ul>
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
 
@@ -1816,6 +1931,16 @@ const SyncScanners = () =>
       одного в другого и наоборот, а также подтянуть продажи, которые были во
       время написания витрины.
     </p>
+
+    <div className="border-l-4 border-amber-500 bg-amber-50 p-4 rounded-r-lg flex items-start mb-5">
+      <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
+      <div>
+        <h4 className="font-bold text-amber-900 mb-0.5">Важно: делать на ДВУХ ТСД!</h4>
+        <p className="text-amber-800 text-base leading-relaxed">
+          Все шаги по выгрузке и загрузке данных необходимо выполнить <strong className="font-bold">на каждом из двух ТСД по очереди</strong>, чтобы объединить данные с обоих сканеров.
+        </p>
+      </div>
+    </div>
 
     <div className="grid grid-cols-1 gap-4 mb-5">
       {/* На ТСД — выгрузка */}
@@ -2019,104 +2144,509 @@ const SyncScanners1e = () =>
     </div>
   </Page>;
 
-// --- Page 12: Синхронизация (продолжение) ---
+// --- Page 12: Синхронизация — шаг 9 PC ---
 const SyncScanners2 = () =>
 <Page pageNumber={12}>
-    {/* На компьютере */}
-    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
-        <h3 className="text-xl font-bold text-gray-900">На компьютере:</h3>
-      </div>
-      <ol className="space-y-4 text-lg">
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-6 shrink-0">9.</span>
-          <span className="text-gray-800">
-            Нажмите{' '}
-            <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">
-              F8
-            </kbd>
-          </span>
-        </li>
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-7 shrink-0">10.</span>
-          <span className="text-gray-800">
-            Выберите{' '}
-            <strong className="font-semibold">
-              Доп. функции → Инвентаризация
-            </strong>
-          </span>
-        </li>
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-7 shrink-0">11.</span>
-          <span className="text-gray-800">
-            Введите пароль:{' '}
-            <strong className="font-semibold text-blue-700">4459</strong>
-          </span>
-        </li>
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-7 shrink-0">12.</span>
-          <span className="text-gray-800">
-            Выберите сегодняшнюю дату переучёта
-          </span>
-        </li>
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-7 shrink-0">13.</span>
-          <span className="text-gray-800">
-            В другой вкладке выберите склад вашей точки
-          </span>
-        </li>
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-7 shrink-0">14.</span>
-          <span className="text-gray-800">
-            Нажмите{' '}
-            <strong className="font-semibold">«Загрузить с ТСД»</strong>
-          </span>
-        </li>
-        <li className="flex">
-          <span className="font-bold text-blue-700 w-7 shrink-0">15.</span>
-          <span className="text-gray-800">
-            Нажмите{' '}
-            <strong className="font-semibold">«Выгрузить для ТСД»</strong> —
-            появится код БТ
-          </span>
-        </li>
-      </ol>
-    </div>
-
-  </Page>;
-
-// --- Page 12b: Синхронизация сканеров (Загрузка) ---
-const SyncScanners3 = () =>
-<Page>
-    {/* На ТСД — загрузка */}
-    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
-      <div className="flex items-center mb-4">
-        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
-        <h3 className="text-xl font-bold text-gray-900">На ТСД (загрузка):</h3>
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере:
+        </h3>
       </div>
       <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
           <div className="flex items-start">
-            <span className="font-bold text-blue-700 w-7 shrink-0 mt-0.5">16.</span>
-            <span className="text-gray-800">
-              Нажмите <strong className="font-semibold">«Загрузить»</strong> и
-              введите код БТ, который появился на шаге 15
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              9
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите клавишу{' '}
+              <kbd className="px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-sm font-mono font-bold text-gray-700">
+                F8
+              </kbd>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4963.jpg"
+              alt="Нажмите F8 — Документы"
+              className="w-full h-auto object-contain" />
+            </div>
           </div>
         </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.1: Синхронизация — шаг 10 PC ---
+const SyncScanners2b = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
         <li className="flex flex-col">
           <div className="flex items-start">
-            <span className="font-bold text-blue-700 w-7 shrink-0 mt-0.5">17.</span>
-            <span className="text-gray-800">
-              После появления сообщения <strong className="font-semibold">«Загрузка завершена»</strong> нажмите кнопку <strong className="font-semibold">«ОК»</strong>
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              10
             </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">Доп. функции</strong>
+            </div>
           </div>
-          <div className="mt-3 mb-2">
-            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[200px] mx-auto shadow-sm">
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
               <img
-              src="/IMG_sync_9.jpg"
-              alt="Загрузка завершена"
+              src="/IMG_4964.jpg"
+              alt="Доп. функции"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.2: Синхронизация — шаг 11 PC ---
+const SyncScanners2c = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              11
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">Инвентаризация</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4965.jpg"
+              alt="Нажмите Инвентаризация"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.3: Синхронизация — шаг 12 PC ---
+const SyncScanners2d = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              12
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Введите пароль:{' '}
+              <strong className="font-semibold text-blue-700">4459</strong> —
+              после ввода пароля нажмите на кнопку{' '}
+              <strong className="font-semibold">«Ввести»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4966_2.jpg"
+              alt="Введите пароль 4459 и нажмите Ввести"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.4: Синхронизация — шаг 13 PC ---
+const SyncScanners2e = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              13
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Выберите сегодняшнюю дату переучёта
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4967_2.jpg"
+              alt="Выберите дату переучёта"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.5: Синхронизация — шаг 14 PC ---
+const SyncScanners2f = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              14
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              В другой вкладке выберите склад вашей точки
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4968.jpg"
+              alt="Выберите склад вашей точки"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.6: Синхронизация — шаг 15 PC ---
+const SyncScanners2g = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              15
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите на <strong className="font-semibold">«Загрузить из ТСД»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_sync_15.jpg"
+              alt="Загрузить из ТСД"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+      </div>
+    </Page>;
+
+// --- Page 12.7: Синхронизация — шаг 16 PC ---
+const SyncScanners2h = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              16
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Выгрузить для ТСД»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4969.jpg"
+              alt="Выгрузить для ТСД"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.8: Синхронизация — шаг 17 PC ---
+const SyncScanners2i = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              17
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Появится надпись{' '}
+              <strong className="font-semibold">«Выгрузка выполнена»</strong> —
+              нажмите <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4970.jpg"
+              alt="Выгрузка выполнена — нажмите ОК"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.9: Синхронизация — шаг 18 PC ---
+const SyncScanners2j = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Monitor className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На компьютере — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              18
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Появился <strong className="font-semibold">BT-код</strong> — его
+              нужно будет загрузить в сканер
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4971.jpg"
+              alt="BT-код для загрузки в сканер"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12b: Синхронизация сканеров (Загрузка) — шаг 19 ---
+const SyncScanners3 = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">На сканере (ТСД):</h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              19
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Загрузить»</strong> на
+              сканере и введите BT-код, который появился на шаге 18
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4973.jpg"
+              alt="Нажмите Загрузить на сканере"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.10: Синхронизация сканеров (Загрузка) — шаг 20 ---
+const SyncScanners3b = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На сканере (ТСД) — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              20
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Нажмите <strong className="font-semibold">«Выбрать»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4974_2.jpg"
+              alt="Нажмите Выбрать"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.11: Синхронизация сканеров (Загрузка) — шаг 21 ---
+const SyncScanners3c = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На сканере (ТСД) — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              21
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Введите в верхнюю строку{' '}
+              <strong className="font-semibold">BT-код</strong>, который появился
+              на компьютере (шаг 18), и нажмите{' '}
+              <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4979.jpg"
+              alt="Введите BT-код в верхнюю строку"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.12: Синхронизация сканеров (Загрузка) — шаг 22 ---
+const SyncScanners3d = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На сканере (ТСД) — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              22
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              Дождитесь надписи{' '}
+              <strong className="font-semibold">«Скачивание завершено»</strong> —
+              нажмите <strong className="font-semibold">«Ок»</strong> и дождитесь
+              полной загрузки
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4981.jpg"
+              alt="Скачивание завершено — нажмите Ок"
+              className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Page>;
+
+// --- Page 12.13: Синхронизация сканеров (Загрузка) — шаг 23 ---
+const SyncScanners3e = () =>
+<Page>
+    <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
+      <div className="flex items-center mb-4">
+        <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">
+          На сканере (ТСД) — продолжение:
+        </h3>
+      </div>
+      <ol className="space-y-5 text-lg">
+        <li className="flex flex-col">
+          <div className="flex items-start">
+            <span className="bg-blue-700 text-white text-sm font-bold rounded-full w-7 h-7 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+              23
+            </span>
+            <div className="text-base text-gray-700 leading-relaxed pt-0.5">
+              После загрузки появится надпись{' '}
+              <strong className="font-semibold">«Загрузка окончена»</strong> —
+              нажмите <strong className="font-semibold">«ОК»</strong>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="rounded-lg overflow-hidden border border-gray-200 max-w-[420px] mx-auto shadow-sm">
+              <img
+              src="/IMG_4983.jpg"
+              alt="Загрузка окончена — нажмите ОК"
               className="w-full h-auto object-contain" />
             </div>
           </div>
@@ -2124,27 +2654,23 @@ const SyncScanners3 = () =>
       </ol>
     </div>
 
-    <div className="border-l-4 border-amber-500 bg-amber-50 p-4 rounded-r-lg flex items-start mb-5">
-      <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
-      <div>
-        <h4 className="font-bold text-amber-900 mb-0.5">Важно</h4>
-        <p className="text-amber-800 text-base">
-          При загрузке и выгрузке с ТСД{' '}
-          <strong className="font-bold">должен быть включен интернет</strong>.
-        </p>
-      </div>
-    </div>
+    {/* Разделитель */}
+    <div className="border-t border-gray-200 my-4"></div>
 
     {/* QR-код видео */}
-    <div className="flex justify-center mt-auto">
-      <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 flex flex-col items-center text-center w-60">
-        <QRCodeSVG value="https://inv-manual.ru/video/06-sync-scanners" size={56} level="M" className="mb-2" />
-        <span className="text-base font-bold text-gray-800 mb-1">
-          🎬 Видео-инструкция
-        </span>
-        <span className="text-sm text-gray-500">
-          Отсканируйте QR-код, чтобы посмотреть видео процесса синхронизации
-        </span>
+    <div className="flex justify-center mb-4">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
+        <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
+          <QRCodeSVG value="https://youtube.com/shorts/nUGHky-M_RQ" size={130} level="M" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-base font-bold text-blue-900 mb-1">
+            🎬 Видео-инструкция
+          </span>
+          <span className="text-sm text-blue-700 leading-snug">
+            Отсканируйте QR-код, чтобы посмотреть видео процесса синхронизации
+          </span>
+        </div>
       </div>
     </div>
   </Page>;
@@ -2518,13 +3044,28 @@ export function App() {
         <AllRemainders />
         <AllRemainders2 />
         <AllRemainders3 />
+        <AllRemainders3b />
+        <AllRemainders3c />
         <SyncScanners />
         <SyncScanners1b />
         <SyncScanners1c />
         <SyncScanners1d />
         <SyncScanners1e />
         <SyncScanners2 />
+        <SyncScanners2b />
+        <SyncScanners2c />
+        <SyncScanners2d />
+        <SyncScanners2e />
+        <SyncScanners2f />
+        <SyncScanners2g />
+        <SyncScanners2h />
+        <SyncScanners2i />
+        <SyncScanners2j />
         <SyncScanners3 />
+        <SyncScanners3b />
+        <SyncScanners3c />
+        <SyncScanners3d />
+        <SyncScanners3e />
         <Verification />
         <Verification2 />
         <Verification3 />
