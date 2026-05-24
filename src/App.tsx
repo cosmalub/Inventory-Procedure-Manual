@@ -57,11 +57,11 @@ const TOCItem = ({
 
 
 }: {number: string;title: string;page: string;}) =>
-<div className="flex items-end mb-4">
-    <span className="font-semibold text-blue-700 w-6">{number}</span>
-    <span className="font-medium text-gray-800 text-lg">{title}</span>
-    <div className="flex-grow border-b-2 border-dotted border-gray-300 mx-3 mb-1.5"></div>
-    <span className="text-gray-500 font-medium">{page}</span>
+<div className="flex items-center gap-3 py-2.5 px-3 rounded-lg hover:bg-blue-50/50 transition-colors group">
+    <span className="bg-blue-700 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">{number}</span>
+    <span className="font-medium text-gray-800 flex-grow text-base">{title}</span>
+    <div className="flex-grow border-b border-dotted border-gray-300 mx-2 mb-0.5 min-w-4"></div>
+    <span className="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-full shrink-0 whitespace-nowrap">стр. {page}</span>
   </div>;
 
 const TableOfContents = () =>
@@ -70,17 +70,17 @@ const TableOfContents = () =>
       Содержание
     </h2>
     <div className="flex flex-col gap-2 mt-4">
-      <TOCItem number="1" title="Общие положения" page="3" />
-      <TOCItem number="2" title="Создание точки на ТСД" page="5" />
-      <TOCItem number="3" title="Написание витрины" page="6" />
-      <TOCItem number="4" title="Закрытие смены и пересчёт денег" page="9" />
-      <TOCItem number="5" title="Внесение всех остатков" page="8" />
-      <TOCItem number="6" title="Синхронизация сканеров" page="9" />
-      <TOCItem number="7" title="Сверка — пересчёт расхождений" page="10" />
+      <TOCItem number="1" title="Общие положения" page="3–4" />
+      <TOCItem number="2" title="Создание точки на ТСД" page="5–20" />
+      <TOCItem number="3" title="Написание витрины" page="21–23" />
+      <TOCItem number="4" title="Закрытие смены и пересчёт денег" page="24–36" />
+      <TOCItem number="5" title="Внесение всех остатков" page="37–41" />
+      <TOCItem number="6" title="Синхронизация сканеров" page="42–63" />
+      <TOCItem number="7" title="Сверка — пересчёт расхождений" page="64–67" />
       <TOCItem
       number="8"
       title="Выгрузка данных, закрытие инвентаризации и заполнение актов"
-      page="11" />
+      page="68–85" />
     
     </div>
   </Page>;
@@ -267,7 +267,7 @@ const Step1Detail = () =>
 
 // --- Page 5.5: Создание точки — продолжение (шаги 2-6) ---
 const Step1DetailCont = () =>
-<Page>
+<Page pageNumber={6}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -300,7 +300,7 @@ const Step1DetailCont = () =>
 
 // --- Page 5.6: Создание точки — шаги 3-7 ---
 const Step1DetailCont2 = () =>
-<Page>
+<Page pageNumber={7}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -333,7 +333,7 @@ const Step1DetailCont2 = () =>
 
 // --- Page 5.7: Создание точки — шаги 5-7 ---
 const Step1DetailCont2b = () =>
-<Page>
+<Page pageNumber={8}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -369,7 +369,7 @@ const Step1DetailCont2b = () =>
 
 // --- Page 5.8: Создание точки — шаги 5-7 ---
 const Step1DetailCont3 = () =>
-<Page>
+<Page pageNumber={9}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -402,7 +402,7 @@ const Step1DetailCont3 = () =>
 
 // --- Page 5.9: Создание точки — шаги 5-7 ---
 const Step1DetailCont3b = () =>
-<Page>
+<Page pageNumber={10}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -435,7 +435,7 @@ const Step1DetailCont3b = () =>
 
 // --- Page 6: Создание точки — шаг 7 + сканер ---
 const Step1Detail2 = () =>
-<Page>
+<Page pageNumber={11}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -468,7 +468,7 @@ const Step1Detail2 = () =>
 
 // --- Page 6.5: Создание точки — сканер + QR + важно ---
 const Step1Detail2a = () =>
-<Page>
+<Page pageNumber={12}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -503,7 +503,7 @@ const Step1Detail2a = () =>
 
 // --- Page 6.55: Создание точки — шаг 9 BT код ---
 const Step1Detail2b = () =>
-<Page>
+<Page pageNumber={13}>
     {/* Шаг 9 — BT код */}
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
@@ -538,7 +538,7 @@ const Step1Detail2b = () =>
 
 // --- Page 6.58: Создание точки — интернет / режим полета ---
 const Step1Detail2cIntro = () =>
-<Page>
+<Page pageNumber={14}>
     {/* Scanner Section */}
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
@@ -570,7 +570,7 @@ const Step1Detail2cIntro = () =>
 
 // --- Page 6.6: Создание точки — сканер + QR + важно ---
 const Step1Detail2c = () =>
-<Page>
+<Page pageNumber={15}>
     {/* Scanner Section */}
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
@@ -603,7 +603,7 @@ const Step1Detail2c = () =>
 
 // --- Page 6.65: Сканер — шаг 2 ---
 const Step1Detail2c2 = () =>
-<Page>
+<Page pageNumber={16}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -636,7 +636,7 @@ const Step1Detail2c2 = () =>
 
 // --- Page 6.66: Сканер — шаг 3 ---
 const Step1Detail2c3 = () =>
-<Page>
+<Page pageNumber={17}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -672,7 +672,7 @@ const Step1Detail2c3 = () =>
 
 // --- Page 6.67: Сканер — шаг 4 ---
 const Step1Detail2c4 = () =>
-<Page>
+<Page pageNumber={18}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -708,7 +708,7 @@ const Step1Detail2c4 = () =>
 
 // --- Page 6.68: Сканер — шаг 5 ---
 const Step1Detail2c5 = () =>
-<Page>
+<Page pageNumber={19}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -743,7 +743,7 @@ const Step1Detail2c5 = () =>
 
 // --- Page 6.69: Сканер — шаг 6 ---
 const Step1Detail2c6 = () =>
-<Page>
+<Page pageNumber={20}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -831,7 +831,7 @@ const Step1Detail2c6 = () =>
 
 // --- Page 6: Написание витрины (intro) ---
 const WritingShowcase = () =>
-<Page pageNumber={6}>
+<Page pageNumber={21}>
     <h2 className="text-3xl font-bold text-gray-900 mb-5 border-b pb-4">
       3. Написание витрины
     </h2>
@@ -903,7 +903,7 @@ const WritingShowcase = () =>
 
 // --- Page 7: Написание витрины (продолжение) ---
 const WritingShowcase2 = () =>
-<Page pageNumber={7}>
+<Page pageNumber={22}>
     {/* Добавить несколько позиций */}
     <div className="mb-8">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
@@ -1014,7 +1014,7 @@ const WritingShowcase2 = () =>
 
 // --- Page 8: Написание витрины (удаление + видео) ---
 const WritingShowcase3 = () =>
-<Page pageNumber={8}>
+<Page pageNumber={23}>
     {/* Удалить позицию */}
     <div className="mb-8">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
@@ -1088,7 +1088,7 @@ const WritingShowcase3 = () =>
 
 // --- Page 9: Закрытие смены и пересчёт денег ---
 const ShiftClosing = () =>
-<Page pageNumber={9}>
+<Page pageNumber={24}>
     <h2 className="text-3xl font-bold text-gray-900 mb-5 border-b pb-4">
       4. Закрытие смены и пересчёт денег
     </h2>
@@ -1128,7 +1128,7 @@ const ShiftClosing = () =>
 
 // --- Page 9.5: Закрытие смены — Х-отчёт (продолжение) ---
 const ShiftClosing1b = () =>
-<Page>
+<Page pageNumber={25}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -1159,7 +1159,7 @@ const ShiftClosing1b = () =>
 
 // --- Page 9.6: Закрытие смены — Х-отчёт (шаг 3) ---
 const ShiftClosing1c = () =>
-<Page>
+<Page pageNumber={26}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -1190,7 +1190,7 @@ const ShiftClosing1c = () =>
 
 // --- Page 9b: Закрытие смены — продолжение ---
 const ShiftClosing2 = () =>
-<Page>
+<Page pageNumber={27}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -1225,7 +1225,7 @@ const ShiftClosing2 = () =>
 
 // --- Page 9.65: Закрытие смены — подтверждение ---
 const ShiftClosing2b = () =>
-<Page>
+<Page pageNumber={28}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -1287,7 +1287,7 @@ const ShiftClosing2b = () =>
 
 // --- Page 9.7: Закрытие смены — пересчёт денег ---
 const ShiftClosing3 = () =>
-<Page>
+<Page pageNumber={29}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       {/* Пересчёт денег + ТСД */}
       <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -1348,7 +1348,7 @@ const ShiftClosing3 = () =>
 
 // --- Page 9.75: Закрытие смены — ввод количества купюр ---
 const ShiftClosing3b = () =>
-<Page>
+<Page pageNumber={30}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -1399,7 +1399,7 @@ const ShiftClosing3b = () =>
 
 // --- Page 9.77: Закрытие смены — удаление количества купюр ---
 const ShiftClosing3c = () =>
-<Page>
+<Page pageNumber={31}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -1450,7 +1450,7 @@ const ShiftClosing3c = () =>
 
 // --- Page 9.8: Закрытие смены — внесение/изъятие ---
 const ShiftClosing4 = () =>
-<Page>
+<Page pageNumber={32}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       {/* На компьютере — внесение/изъятие */}
       <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -1493,7 +1493,7 @@ const ShiftClosing4 = () =>
 
 // --- Page 9.85: Закрытие смены — внесение/изъятие (продолжение) ---
 const ShiftClosing4b = () =>
-<Page>
+<Page pageNumber={33}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -1542,7 +1542,7 @@ const ShiftClosing4b = () =>
 
 // --- Page 9.87: Закрытие смены — не фискальный ---
 const ShiftClosing4c = () =>
-<Page>
+<Page pageNumber={34}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -1575,7 +1575,7 @@ const ShiftClosing4c = () =>
 
 // --- Page 9.88: Закрытие смены — ввод суммы ---
 const ShiftClosing4d = () =>
-<Page>
+<Page pageNumber={35}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -1608,7 +1608,7 @@ const ShiftClosing4d = () =>
 
 // --- Page 9.89: Закрытие смены — прочее внесение ---
 const ShiftClosing4e = () =>
-<Page>
+<Page pageNumber={36}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -1659,7 +1659,7 @@ const ShiftClosing4e = () =>
 
 // --- Page 10: Внесение всех остатков ---
 const AllRemainders = () =>
-<Page pageNumber={10}>
+<Page pageNumber={37}>
     <h2 className="text-3xl font-bold text-gray-900 mb-5 border-b pb-4">
       5. Внесение всех остатков
     </h2>
@@ -1720,7 +1720,7 @@ const AllRemainders = () =>
 
 // --- Page 10a: Внесение всех остатков — шаг 2 ---
 const AllRemainders2 = () =>
-<Page>
+<Page pageNumber={38}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-3">
@@ -1792,7 +1792,7 @@ const AllRemainders2 = () =>
 
 // --- Page 10b: Внесение всех остатков — вручную ---
 const AllRemainders3 = () =>
-<Page>
+<Page pageNumber={39}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       {/* Вручную */}
       <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -1837,7 +1837,7 @@ const AllRemainders3 = () =>
 
 // --- Page 10c: Внесение всех остатков — вручную (поиск) ---
 const AllRemainders3b = () =>
-<Page>
+<Page pageNumber={40}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -1898,7 +1898,7 @@ const AllRemainders3b = () =>
 
 // --- Page 10d: Внесение всех остатков — вручную (ввод количества) ---
 const AllRemainders3c = () =>
-<Page>
+<Page pageNumber={41}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -1946,7 +1946,7 @@ const AllRemainders3c = () =>
 
 // --- Page 11: Синхронизация сканеров ---
 const SyncScanners = () =>
-<Page pageNumber={11}>
+<Page pageNumber={42}>
     <h2 className="text-3xl font-bold text-gray-900 mb-5 border-b pb-4">
       6. Синхронизация сканеров
     </h2>
@@ -2000,7 +2000,7 @@ const SyncScanners = () =>
 
 // --- Page 11b: Синхронизация сканеров (продолжение) ---
 const SyncScanners1b = () =>
-<Page>
+<Page pageNumber={43}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -2052,7 +2052,7 @@ const SyncScanners1b = () =>
 
 // --- Page 11c: Синхронизация сканеров (Выгрузка) ---
 const SyncScanners1c = () =>
-<Page>
+<Page pageNumber={44}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -2103,7 +2103,7 @@ const SyncScanners1c = () =>
 
 // --- Page 11d: Синхронизация сканеров (Выбор) ---
 const SyncScanners1d = () =>
-<Page>
+<Page pageNumber={45}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -2154,7 +2154,7 @@ const SyncScanners1d = () =>
 
 // --- Page 11e: Синхронизация сканеров (Подтверждение выгрузки) ---
 const SyncScanners1e = () =>
-<Page>
+<Page pageNumber={46}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -2187,7 +2187,7 @@ const SyncScanners1e = () =>
 
 // --- Page 12: Синхронизация — шаг 9 PC ---
 const SyncScanners2 = () =>
-<Page pageNumber={12}>
+<Page pageNumber={47}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2223,7 +2223,7 @@ const SyncScanners2 = () =>
 
 // --- Page 12.1: Синхронизация — шаг 10 PC ---
 const SyncScanners2b = () =>
-<Page>
+<Page pageNumber={48}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2256,7 +2256,7 @@ const SyncScanners2b = () =>
 
 // --- Page 12.2: Синхронизация — шаг 11 PC ---
 const SyncScanners2c = () =>
-<Page>
+<Page pageNumber={49}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2289,7 +2289,7 @@ const SyncScanners2c = () =>
 
 // --- Page 12.3: Синхронизация — шаг 12 PC ---
 const SyncScanners2d = () =>
-<Page>
+<Page pageNumber={50}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2325,7 +2325,7 @@ const SyncScanners2d = () =>
 
 // --- Page 12.4: Синхронизация — шаг 13 PC ---
 const SyncScanners2e = () =>
-<Page>
+<Page pageNumber={51}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2358,7 +2358,7 @@ const SyncScanners2e = () =>
 
 // --- Page 12.5: Синхронизация — шаг 14 PC ---
 const SyncScanners2f = () =>
-<Page>
+<Page pageNumber={52}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2391,7 +2391,7 @@ const SyncScanners2f = () =>
 
 // --- Page 12.6: Синхронизация — шаг 15 PC ---
 const SyncScanners2g = () =>
-<Page>
+<Page pageNumber={53}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2424,7 +2424,7 @@ const SyncScanners2g = () =>
 
 // --- Page 12.7: Синхронизация — шаг 16 PC ---
 const SyncScanners2g_ok = () =>
-<Page>
+<Page pageNumber={54}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2459,7 +2459,7 @@ const SyncScanners2g_ok = () =>
 
 // --- Page 12.8: Синхронизация — шаг 17 PC ---
 const SyncScanners2g_report = () =>
-<Page>
+<Page pageNumber={55}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2499,7 +2499,7 @@ const SyncScanners2g_report = () =>
 
 // --- Page 12.9: Синхронизация — шаг 18 PC ---
 const SyncScanners2h = () =>
-<Page>
+<Page pageNumber={56}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2532,7 +2532,7 @@ const SyncScanners2h = () =>
 
 // --- Page 12.10: Синхронизация — шаг 19 PC ---
 const SyncScanners2i = () =>
-<Page>
+<Page pageNumber={57}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2567,7 +2567,7 @@ const SyncScanners2i = () =>
 
 // --- Page 12.11: Синхронизация — шаг 20 PC ---
 const SyncScanners2j = () =>
-<Page>
+<Page pageNumber={58}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -2601,7 +2601,7 @@ const SyncScanners2j = () =>
 
 // --- Page 12b: Синхронизация сканеров (Загрузка) — шаг 21 ---
 const SyncScanners3 = () =>
-<Page>
+<Page pageNumber={59}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -2633,7 +2633,7 @@ const SyncScanners3 = () =>
 
 // --- Page 12.12: Синхронизация сканеров (Загрузка) — шаг 22 ---
 const SyncScanners3b = () =>
-<Page>
+<Page pageNumber={60}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -2666,7 +2666,7 @@ const SyncScanners3b = () =>
 
 // --- Page 12.13: Синхронизация сканеров (Загрузка) — шаг 23 ---
 const SyncScanners3c = () =>
-<Page>
+<Page pageNumber={61}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -2702,7 +2702,7 @@ const SyncScanners3c = () =>
 
 // --- Page 12.14: Синхронизация сканеров (Загрузка) — шаг 24 ---
 const SyncScanners3d = () =>
-<Page>
+<Page pageNumber={62}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -2738,7 +2738,7 @@ const SyncScanners3d = () =>
 
 // --- Page 12.15: Синхронизация сканеров (Загрузка) — шаг 25 ---
 const SyncScanners3e = () =>
-<Page>
+<Page pageNumber={63}>
     <div className="bg-white border border-gray-200 rounded-lg p-5 mb-5">
       <div className="flex items-center mb-4">
         <Smartphone className="w-5 h-5 text-blue-700 mr-2" />
@@ -2793,7 +2793,7 @@ const SyncScanners3e = () =>
 
 // --- Page 13: Сверка — пересчёт расхождений ---
 const Verification = () =>
-<Page pageNumber={13}>
+<Page pageNumber={64}>
     <h2 className="text-3xl font-bold text-gray-900 mb-5 border-b pb-4">
       7. Сверка — пересчёт расхождений
     </h2>
@@ -2837,7 +2837,7 @@ const Verification = () =>
 
 // --- Page 13b: Сверка — пересчёт расхождений (продолжение) ---
 const Verification1b = () =>
-<Page>
+<Page pageNumber={65}>
     <div className="mb-6 space-y-4">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
         <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
@@ -2885,7 +2885,7 @@ const Verification1b = () =>
 
 // --- Page 14: Сверка — исправление ошибок ---
 const Verification2 = () =>
-<Page pageNumber={14}>
+<Page pageNumber={66}>
     {/* Не числится документально */}
     <div className="mb-6">
       <div className="bg-purple-50/50 border border-purple-200 rounded-xl p-4 flex gap-5 items-center">
@@ -2963,7 +2963,7 @@ const Verification2 = () =>
 
 // --- Page 15: Сверка — исправление ошибок (синий) ---
 const Verification2b = () =>
-<Page pageNumber={15}>
+<Page pageNumber={67}>
     {/* Как исправить если плюсует */}
     <div className="mb-8">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
@@ -3016,29 +3016,6 @@ const Verification2b = () =>
         </div>
       </div>
     </div>
-  </Page>;
-
-// --- Page 16: Сверка — важно + видео ---
-const Verification3 = () =>
-<Page pageNumber={16}>
-    {/* Фиолетовые цвета — не числятся документально */}
-    <div className="mb-8">
-      <h3 className="text-xl font-bold text-blue-700 mb-2 flex items-center">
-        <div className="w-2 h-6 bg-blue-700 mr-3 rounded-sm"></div>
-        Фиолетовый цвет (не числится документально)
-      </h3>
-      <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-        Просто убеждаемся, что количество посчитано верно по факту. Если нет — добавляем или убираем количество: нужно, чтобы оно совпало с тем, что фактически есть в наличии.
-      </p>
-      <div className="flex justify-center mt-4">
-        <div className="bg-gray-100 border-2 border-gray-200 rounded-xl flex flex-col items-center justify-center w-full max-w-[200px] overflow-hidden aspect-[9/16]">
-          <img
-          src="/IMG_purple.jpg"
-          alt="Фиолетовый цвет"
-          className="w-full h-full object-cover" />
-        </div>
-      </div>
-    </div>
 
     <div className="border-l-4 border-amber-500 bg-amber-50 p-5 rounded-r-lg flex items-start mb-6">
       <AlertTriangle className="w-5 h-5 text-amber-500 mr-3 shrink-0 mt-0.5" />
@@ -3070,9 +3047,11 @@ const Verification3 = () =>
     </div>
   </Page>;
 
+
+
 // --- Page 17: Выгрузка данных и закрытие инвентаризации ---
 const DataExport = () =>
-<Page pageNumber={17}>
+<Page pageNumber={68}>
     <h2 className="text-3xl font-bold text-gray-900 mb-5 border-b pb-4">
       8. Выгрузка данных, закрытие инвентаризации и заполнение актов
     </h2>
@@ -3123,7 +3102,7 @@ const DataExport = () =>
   </Page>;
 
 const DataExport1b = () =>
-<Page>
+<Page pageNumber={69}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -3174,7 +3153,7 @@ const DataExport1b = () =>
   </Page>;
 
 const DataExport1c = () =>
-<Page>
+<Page pageNumber={70}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -3224,7 +3203,7 @@ const DataExport1c = () =>
   </Page>;
 
 const DataExport1d = () =>
-<Page>
+<Page pageNumber={71}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -3274,7 +3253,7 @@ const DataExport1d = () =>
   </Page>;
 
 const DataExport1e = () =>
-<Page>
+<Page pageNumber={72}>
     <div className="grid grid-cols-1 gap-4 mb-5">
       <div className="bg-white border border-gray-200 rounded-lg p-5">
         <div className="flex items-center mb-4">
@@ -3306,7 +3285,7 @@ const DataExport1e = () =>
   </Page>;
 
 const DataExport2 = () =>
-<Page pageNumber={18}>
+<Page pageNumber={73}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3341,7 +3320,7 @@ const DataExport2 = () =>
   </Page>;
 
 const DataExport2b = () =>
-<Page>
+<Page pageNumber={74}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3373,7 +3352,7 @@ const DataExport2b = () =>
   </Page>;
 
 const DataExport2c = () =>
-<Page>
+<Page pageNumber={75}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3405,7 +3384,7 @@ const DataExport2c = () =>
   </Page>;
 
 const DataExport2d = () =>
-<Page>
+<Page pageNumber={76}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3437,7 +3416,7 @@ const DataExport2d = () =>
   </Page>;
 
 const DataExport2e = () =>
-<Page>
+<Page pageNumber={77}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3469,7 +3448,7 @@ const DataExport2e = () =>
   </Page>;
 
 const DataExport2f = () =>
-<Page>
+<Page pageNumber={78}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3501,7 +3480,7 @@ const DataExport2f = () =>
   </Page>;
 
 const DataExport2g = () =>
-<Page>
+<Page pageNumber={79}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3533,7 +3512,7 @@ const DataExport2g = () =>
   </Page>;
 
 const DataExport2h = () =>
-<Page>
+<Page pageNumber={80}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3567,7 +3546,7 @@ const DataExport2h = () =>
   </Page>;
 
 const DataExport3 = () =>
-<Page pageNumber={19}>
+<Page pageNumber={81}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3606,7 +3585,7 @@ const DataExport3 = () =>
   </Page>;
 
 const DataExport3b = () =>
-<Page pageNumber={20}>
+<Page pageNumber={82}>
     <div className="bg-white border border-gray-200 rounded-lg p-5">
       <div className="flex items-center mb-4">
         <Monitor className="w-5 h-5 text-blue-700 mr-2" />
@@ -3666,7 +3645,7 @@ const DataExport3b = () =>
 
 // --- Page 21: Заполнение актов ---
 const FillActs = () =>
-<Page pageNumber={21}>
+<Page pageNumber={83}>
     <h3 className="text-2xl font-bold text-gray-900 mb-6">Заполнение актов</h3>
 
     {/* Акт инвентаризации */}
@@ -3692,7 +3671,7 @@ const FillActs = () =>
 
 // --- Page 22: Акт кофейника ---
 const FillActs2 = () =>
-<Page pageNumber={22}>
+<Page pageNumber={84}>
     {/* Акт кофейника */}
     <div className="mb-6">
       <h3 className="text-xl font-bold text-blue-700 mb-3 flex items-center">
@@ -3719,7 +3698,7 @@ const FillActs2 = () =>
 
 // --- Последняя страница: Контакты ---
 const Contacts = () =>
-<Page pageNumber={23}>
+<Page pageNumber={85}>
     <div className="flex flex-col items-center justify-center flex-grow text-center">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">
         Контакты для помощи
@@ -3825,7 +3804,6 @@ export function App() {
         <Verification1b />
         <Verification2 />
         <Verification2b />
-        <Verification3 />
         <DataExport />
         <DataExport1b />
         <DataExport1c />
