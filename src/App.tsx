@@ -1929,7 +1929,7 @@ const AllRemainders3c = () =>
     <div className="mt-auto border-t border-gray-200 pt-4">
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center gap-4 w-full">
         <div className="shrink-0 bg-white rounded-lg p-2 shadow-sm">
-          <QRCodeSVG value="https://youtu.com/V7b1FNbeWjg" size={130} level="M" />
+          <QRCodeSVG value="https://youtube.com/shorts/V7b1FNbeWjg" size={130} level="M" />
         </div>
         <div className="flex flex-col">
           <span className="text-base font-bold text-blue-900 mb-1">
